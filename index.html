@@ -1,1002 +1,761 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-<meta charset="utf-8">
-<title>Zemen Consulting HTML Template | Homepage</title>
-<!-- Stylesheets -->
-<link href="css/bootstrap.css" rel="stylesheet">
-
-<link href="css/style.css" rel="stylesheet">
-<link href="css/slick.css" rel="stylesheet">
-<link href="css/responsive.css" rel="stylesheet">
-
-<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-<link rel="icon" href="images/favicon.png" type="image/x-icon">
-
-<!-- Responsive -->
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="img/pages/icon.png" type="image/png" />
+  <title>Businzz | Multipurpose Business Website Template</title>
+  <!-- Bootstrap Css -->
+  <link rel="stylesheet" href="vender/bootstrap/css/bootstrap.min.css" />
+  <!-- Icofont Css -->
+  <link rel="stylesheet" href="vender/icofont/icofont.min.css" />
+  <!-- AOS Css -->
+  <link rel="stylesheet" href="vender/aos/dist/aos.css" />
+  <!-- Remix Icons -->
+  <link rel="stylesheet" href="vender/remixicon/remixicon.css" />
+  <!-- Custom Css -->
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Common Css -->
+  <link rel="stylesheet" href="css/common.css" />
 </head>
 
 <body>
+  <!-- Page loading spinner -->
+  <div class="page-loading active">
+    <div class="page-loading-inner">
+      <div class="page-spinner"></div>
+      <span>Loading...</span>
+    </div>
+  </div>
+  <div class="bg-homepage vh-100 d-flex align-items-center flex-column">
+    <!-- Navbar -->
+    <nav
+      class="navbar osahan-main-nav navbar-expand-lg business-nav w-100 p-0 border-bottom border-white border-opacity-25">
+      <div class="container border-light py-2 py-lg-0">
+        <div class="position-relative d-flex align-items-center gap-2 site-brand">
 
-<div class="page-wrapper">
- 	
-    <!-- Preloader -->
-    <div class="preloader"></div>
- 	
-    <!-- Main Header-->
-   
-	<header class="header-upper">
-		<div class="container">
-		  <div class="d-flex justify-content-between align-items-center py-2">
-	  
-			<div class="logo-box">
-			  <a href="index.html">
-				<img src="img/logo.png" height="200" width="250" alt="Logo" title="Logo">
-			  </a>
-			</div>
-			<nav class="main-menu navbar-expand-md">
-			<div class="navbar-header">
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-			</div>
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav ml-auto">
-		
-				  <li class="nav-item dropdown active">
-					<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Home</a>
-					<div class="dropdown-menu">
-					  <a class="dropdown-item" href="index.html">Home Page 01</a>
-					  <a class="dropdown-item" href="index-2.html">Home Page 02</a>
-					  <a class="dropdown-item" href="index-3.html">Home Page 03</a>
-					  <a class="dropdown-item" href="index-4.html">Home Page 04</a>
-					  <a class="dropdown-item" href="index-5.html">Home Page 05</a>
-					  <div class="dropdown-divider"></div>
-					  <div class="dropdown-submenu dropdown">
-						<a class="dropdown-item dropdown-toggle" href="#">Header Styles</a>
-						<div class="dropdown-menu">
-						  <a class="dropdown-item" href="index.html">Header Style 01</a>
-						  <a class="dropdown-item" href="index-2.html">Header Style 02</a>
-						  <a class="dropdown-item" href="index-3.html">Header Style 03</a>
-						  <a class="dropdown-item" href="index-4.html">Header Style 04</a>
-						  <a class="dropdown-item" href="index-5.html">Header Style 05</a>
-						</div>
-					  </div>
-					</div>
-				  </li>
-		
-				  <li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">About</a>
-					<div class="dropdown-menu">
-					  <a class="dropdown-item" href="about.html">About Us</a>
-					  <a class="dropdown-item" href="team.html">Team</a>
-					</div>
-				  </li>
-		
-				  <li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Services</a>
-					<div class="dropdown-menu">
-					  <a class="dropdown-item" href="services-one.html">Services Type 01</a>
-					  <a class="dropdown-item" href="services-two.html">Services Type 02</a>
-					  <a class="dropdown-item" href="financial-investment.html">Financial Investment</a>
-					  <a class="dropdown-item" href="market-research.html">Market Research</a>
-					  <a class="dropdown-item" href="feasibility.html">Feasibility Studies</a>
-					  <a class="dropdown-item" href="business-consult.html">Business Consulting</a>
-					  <a class="dropdown-item" href="growth-track.html">Growth Tracking</a>
-					  <a class="dropdown-item" href="training-work.html">Training & Workshop</a>
-					  <a class="dropdown-item" href="investment-plan.html">Investment Planning</a>
-					  <a class="dropdown-item" href="global-coach.html">Global Coaching</a>
-					</div>
-				  </li>
-		
-				  <li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Portfolio</a>
-					<div class="dropdown-menu">
-					  <a class="dropdown-item" href="portfolio-two-column.html">Portfolio Two Column</a>
-					  <a class="dropdown-item" href="portfolio-three-column.html">Portfolio Three Column</a>
-					  <a class="dropdown-item" href="portfolio-masonry.html">Portfolio Masonry</a>
-					  <a class="dropdown-item" href="portfolio-single.html">Portfolio Single</a>
-					</div>
-				  </li>
-		
-				  <li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Blog</a>
-					<div class="dropdown-menu">
-					  <a class="dropdown-item" href="blog.html">Blog Grid Style</a>
-					  <a class="dropdown-item" href="blog-left.html">Blog Left Sidebar</a>
-					  <a class="dropdown-item" href="blog-classic.html">Blog Fullwidth</a>
-					  <a class="dropdown-item" href="blog-single.html">Blog Single Post</a>
-					</div>
-				  </li>
-		
-				  <li class="nav-item">
-					<a class="nav-link" href="contact.html">Contact us</a>
-				  </li>
-		
-				</ul>
-			  </div>
-			</nav>
-		  </div>
-		</div>
-	  </header>
-	  
-    <!--End Main Header -->
+          <div class="lh-1">
+            <h5 class="fw-bold m-0 text-white">People Better</h5>
 
-    <!--Main Slider-->
-    <section class="main-slider">
-    	
-        <div class="main-slider-carousel owl-carousel owl-theme">
-            
-            <div class="slide" style="background-image:url(images/main-slider/image-1.jpg)">
-                <div class="auto-container">
-                	<div class="content">
-                   		<h3>Get The Success You Need</h3>
-                   		<h2>Business Growth</h2>
-                    	<div class="text">We are working with thousands of business companies around <br> the world & delivering ideas for your business</div>
-                    	<div class="link-box">
-							<a href="#" class="theme-btn btn-style-two">learn more</a>
-						</div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="slide" style="background-image:url(images/main-slider/image-2.jpg)">
-                <div class="auto-container">
-                	<div class="content">
-                   		<h3 class="style-two">Get The Success You Need</h3>
-                   		<h2>We Accomplish</h2>
-                    	<div class="text">We are working with thousands of business companies around <br> the world & delivering ideas for your business</div>
-                    	<div class="link-box">
-							<a href="#" class="theme-btn btn-style-two">learn more</a> <a href="#" class="theme-btn btn-style-three">Our Servics</a>
-						</div>
-                    </div>
-                </div>
-            </div>
-            
+          </div>
+          <a class="stretched-link" href="index.html"></a>
         </div>
-    </section>
-    <!--End Main Slider-->
-	
-	<!--Services Section-->
-	<section class="services-section">
-		<div class="auto-container">
-			<div class="inner-container">
-				<div class="row clearfix">
-					
-					<!--Services Block-->
-					<div class="services-block col-lg-4 col-md-6 col-sm-12">
-						<div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-							<h3><a href="business-consult.html">Advanced Business <br> Solutions</a></h3>
-							<div class="icon-box">
-								<span class="icon flaticon-analysis"></span>
-							</div>
-							<div class="text">Acepteur sintas haecat sed cupidatat non dui proident sunt culpa qui officia sed ipsum tempor eserunt.</div>
-							<div class="more-link"><a class="read-more" href="business-consult.html"><span class="arrow fa fa-angle-right"></span> Read more</a></div>
-						</div>
-					</div>
-					
-					<!--Services Block-->
-					<div class="services-block col-lg-4 col-md-6 col-sm-12">
-						<div class="inner-box wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
-							<h3><a href="business-consult.html">Increase Your Online <br> Presence</a></h3>
-							<div class="icon-box">
-								<span class="icon flaticon-sports-and-competition"></span>
-							</div>
-							<div class="text">Acepteur sintas haecat sed cupidatat non dui proident sunt culpa qui officia sed ipsum tempor eserunt.</div>
-							<div class="more-link"><a class="read-more" href="business-consult.html"><span class="arrow fa fa-angle-right"></span> Read more</a></div>
-						</div>
-					</div>
-					
-					<!--Services Block-->
-					<div class="services-block col-lg-4 col-md-6 col-sm-12">
-						<div class="inner-box wow fadeInLeft" data-wow-delay="600ms" data-wow-duration="1500ms">
-							<h3><a href="business-consult.html">Become Successful <br> & Superior</a></h3>
-							<div class="icon-box">
-								<span class="icon flaticon-graph"></span>
-							</div>
-							<div class="text">Acepteur sintas haecat sed cupidatat non dui proident sunt culpa qui officia sed ipsum tempor eserunt.</div>
-							<div class="more-link"><a class="read-more" href="business-consult.html"><span class="arrow fa fa-angle-right"></span> Read more</a></div>
-						</div>
-					</div>
-					
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--End Services Section-->
-	
-	<!--About Section-->
-	<section class="about-section">
-		<div class="auto-container">
-			<div class="row clearfix">
-				
-				<!--Title Column-->
-				<div class="title-column col-lg-5 col-md-12 col-sm-12">
-					<div class="inner-column">
-						<!--Sec Title-->
-						<div class="sec-title">
-							<h2>About zemen</h2>
-							<div class="title-text">Automate & Simplify The Whole Process</div>
-						</div>
-						<div class="text">Duis aute irure dolor reprehenderit in voluptate velit essle cillum dolore eu fugiat nulla pariatur. Excepteur sint ocaec at cupdatat proident suntin culpa qui officia deserunt mol anim id esa laborum perspiciatis omnis.</div>
-						<a href="#" class="theme-btn btn-style-five">Who We Are</a>
-					</div>
-				</div>
-				
-				<!--Video Column-->
-				<div class="video-column col-lg-7 col-md-12 col-sm-12">
-					<div class="inner-column wow fadeInRight" data-wow-delay="600ms" data-wow-duration="1500ms">
-						
-						<!--Video Box-->
-                        <div class="video-box">
-                            <figure class="image">
-                                <img src="images/resource/video-img.jpg" alt="">
-                            </figure>
-                            <a href="https://www.youtube.com/watch?v=kxPCFljwJws" class="lightbox-image overlay-box"><span class="flaticon-arrow"></span></a>
-                        </div>
-						
-					</div>
-				</div>
-				
-			</div>
-		</div>
-	</section>
-	<!--End About Section-->
-	
-	<!--Fluid Section One-->
-    <section class="fluid-section-one">
-    	<div class="outer-container clearfix">
-        	
-            <!--Image Column-->
-            <div class="image-column" style="background-image:url(images/resource/image-1.jpg);">
-            	<figure class="image-box"><img src="images/resource/image-1.jpg" alt=""></figure>
-            </div>
-            
-        	<!--Content Column-->
-            <div class="content-column">
-            	<div class="inner-column">
-					<div class="clearfix">
-						
-						<!--Title Column-->
-						<div class="title-box">
-							<div class="box-inner">
-								<h2>Mission <br> & History</h2>
-								<div class="text">Voluptate velit essle duis irurey dolor reprehenderitn cillum dolorete fugiat nulla pariatur. Excepteur sint oaec sed capdatat proident suntin. Culpa officia deserunt molanim laborum perspicatis aute omnis lorem.</div>
-							</div>
-						</div>
-						
-						<!--Carousel Box-->
-						<div class="carousel-box">
-							<div class="box-inner">
-								<div class="quote-icon">
-									<span class="icon flaticon-right-quote-sign"></span>
-								</div>
-								
-								<div class="single-item-carousel owl-carousel owl-theme">
-									
-									<!--Testimonial Block-->
-									<div class="testimonial-block">
-										<div class="inner-box">
-											<div class="text">Ptate velit essle duis irue dolor repa enderitn doloreu fugiatla pariaturs Excepeur sint ocae cupdat proident suntin culpa officia deserunt olanim laborum perspiciat aute.</div>
-											<div class="author">Thomas Neil : <span>President</span></div>
-										</div>
-									</div>
-									
-									<!--Testimonial Block-->
-									<div class="testimonial-block">
-										<div class="inner-box">
-											<div class="text">Ptate velit essle duis irue dolor repa enderitn doloreu fugiatla pariaturs Excepeur sint ocae cupdat proident suntin culpa officia deserunt olanim laborum perspiciat aute.</div>
-											<div class="author">Thomas Neil : <span>President</span></div>
-										</div>
-									</div>
-									
-									<!--Testimonial Block-->
-									<div class="testimonial-block">
-										<div class="inner-box">
-											<div class="text">Ptate velit essle duis irue dolor repa enderitn doloreu fugiatla pariaturs Excepeur sint ocae cupdat proident suntin culpa officia deserunt olanim laborum perspiciat aute.</div>
-											<div class="author">Thomas Neil : <span>President</span></div>
-										</div>
-									</div>
-									
-								</div>
-								
-							</div>
-						</div>
-						
-					</div>
-				</div>
-			</div>
-			
-		</div>
-	</section>
-	<!--End Fluid Section One-->
-	
-	<!--Offer Section-->
-	<section class="offer-section">
-		<div class="auto-container">
-			<!--Sec Title-->
-			<div class="sec-title centered">
-				<h2>What We Offers</h2>
-				<div class="title-text">Automate & Simplify The Whole Process</div>
-			</div>
-			
-			<div class="row clearfix">
-				
-				<!--Offer Block-->
-				<div class="offer-block col-lg-4 col-md-6 col-sm-12">
-					<div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-						<div class="image">
-							<a href="financial-investment.html"><img src="images/resource/offer-1.jpg" alt="" /></a>
-						</div>
-						<div class="lower-content">
-							<h3><a href="financial-investment.html">Financial Analysis</a></h3>
-							<div class="text">Acepteur sintas haecate sed ipsums cupidates nondui proident sunlt culpa qui tempore officia sed ipsum tempor eserunt.</div>
-							<a class="read-more" href="financial-investment.html"><span class="fa fa-angle-right"></span> Read more</a>
-						</div>
-					</div>
-				</div>
-				
-				<!--Offer Block-->
-				<div class="offer-block col-lg-4 col-md-6 col-sm-12">
-					<div class="inner-box wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
-						<div class="image">
-							<a href="financial-investment.html"><img src="images/resource/offer-2.jpg" alt="" /></a>
-						</div>
-						<div class="lower-content">
-							<h3><a href="financial-investment.html">Research Managment</a></h3>
-							<div class="text">Acepteur sintas haecate sed ipsums cupidates nondui proident sunlt culpa qui tempore officia sed ipsum tempor eserunt.</div>
-							<a class="read-more" href="financial-investment.html"><span class="fa fa-angle-right"></span> Read more</a>
-						</div>
-					</div>
-				</div>
-				
-				<!--Offer Block-->
-				<div class="offer-block col-lg-4 col-md-6 col-sm-12">
-					<div class="inner-box wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
-						<div class="image">
-							<a href="financial-investment.html"><img src="images/resource/offer-3.jpg" alt="" /></a>
-						</div>
-						<div class="lower-content">
-							<h3><a href="financial-investment.html">Investment Trade</a></h3>
-							<div class="text">Acepteur sintas haecate sed ipsums cupidates nondui proident sunlt culpa qui tempore officia sed ipsum tempor eserunt.</div>
-							<a class="read-more" href="financial-investment.html"><span class="fa fa-angle-right"></span> Read more</a>
-						</div>
-					</div>
-				</div>
-				
-			</div>
-			
-			<!--Counter Section-->
-			<div class="counter-section">
-				<div class="inner-section">
-					
-					<div class="fact-counter">
-						<div class="row clearfix">
+        <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#sidebar" aria-controls="sidebar">
+          <i class="ri-menu-3-line text-white ri-lg"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto gap-5">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html"><i class="ri-apps-2-line"></i> Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
 
-							<!--Column-->
-							<div class="column counter-column col-md-4 col-sm-6 col-xs-12">
-								<div class="inner">
-									<div class="content">
-										<div class="count-outer count-box">
-											<span class="count-text" data-speed="2500" data-stop="260">0</span>+
-										</div>
-										<h4 class="counter-title">Expert Consultants</h4>
-									</div>
-								</div>
-							</div>
-
-							<!--Column-->
-							<div class="column counter-column col-md-4 col-sm-6 col-xs-12">
-								<div class="inner">
-									<div class="content">
-										<div class="count-outer count-box alternate">
-											<span class="count-text" data-speed="3000" data-stop="975">0</span>+
-										</div>
-										<h4 class="counter-title">Orders in queue</h4>
-									</div>
-								</div>
-							</div>
-
-							<!--Column-->
-							<div class="column counter-column col-md-4 col-sm-6 col-xs-12">
-								<div class="inner">
-									<div class="content">
-										<div class="count-outer count-box">
-											<span class="count-text" data-speed="3000" data-stop="318">0</span>+
-										</div>
-										<h4 class="counter-title">activated clients</h4>
-									</div>
-								</div>
-							</div>
-
-						</div>
-					</div>
-					
-				</div>
-			</div>
-			
-		</div>
-	</section>
-	<!--End Offer Section-->
-	
-	<!--Case Section-->
-	<section class="case-section">
-		<div class="auto-container">
-			<!--Sec Title-->
-			<div class="sec-title centered">
-				<h2>zemen Case Studies</h2>
-				<div class="title-text">Automate & Simplify The Whole Process</div>
-			</div>
-		</div>
-		<div class="four-item-carousel owl-carousel owl-theme">
-		
-			<!--Case Block-->
-			<div class="case-block">
-				<div class="inner-box">
-					<div class="image">
-						<img src="images/resource/case-1.jpg" alt="" />
-						<div class="overlay-box">
-							<div class="overlay-inner">
-								<div class="content">
-									<div class="text">Lorem ipsum dolor sit amet adipisicing elit sed eiusmod tempor incididunt ut labore et dolore magna aliqua. Utna enim ad minim veniam quis nostrud exercitation ulamco laboris nisi aliquip exea comm ayodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</div>
-									<a href="global-coach.html" class="read-more"><span class="fa fa-angle-right"></span> Read More</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="lower-box">
-						<div class="category">case study - strategies</div>
-						<h3><a href="global-coach.html">Global Business Managment Tracking Apps</a></h3>
-					</div>
-				</div>
-			</div>
-			
-			<!--Case Block-->
-			<div class="case-block">
-				<div class="inner-box">
-					<div class="image">
-						<img src="images/resource/case-2.jpg" alt="" />
-						<div class="overlay-box">
-							<div class="overlay-inner">
-								<div class="content">
-									<div class="text">Lorem ipsum dolor sit amet adipisicing elit sed eiusmod tempor incididunt ut labore et dolore magna aliqua. Utna enim ad minim veniam quis nostrud exercitation ulamco laboris nisi aliquip exea comm ayodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</div>
-									<a href="global-coach.html" class="read-more"><span class="fa fa-angle-right"></span> Read More</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="lower-box">
-						<div class="category">case study - managment</div>
-						<h3><a href="global-coach.html">Business & Planning With Task Completion</a></h3>
-					</div>
-				</div>
-			</div>
-			
-			<!--Case Block-->
-			<div class="case-block">
-				<div class="inner-box">
-					<div class="image">
-						<img src="images/resource/case-3.jpg" alt="" />
-						<div class="overlay-box">
-							<div class="overlay-inner">
-								<div class="content">
-									<div class="text">Lorem ipsum dolor sit amet adipisicing elit sed eiusmod tempor incididunt ut labore et dolore magna aliqua. Utna enim ad minim veniam quis nostrud exercitation ulamco laboris nisi aliquip exea comm ayodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</div>
-									<a href="global-coach.html" class="read-more"><span class="fa fa-angle-right"></span> Read More</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="lower-box">
-						<div class="category">case study - corporate</div>
-						<h3><a href="global-coach.html">Business & Planning With Task Completion</a></h3>
-					</div>
-				</div>
-			</div>
-			
-			<!--Case Block-->
-			<div class="case-block">
-				<div class="inner-box">
-					<div class="image">
-						<img src="images/resource/case-4.jpg" alt="" />
-						<div class="overlay-box">
-							<div class="overlay-inner">
-								<div class="content">
-									<div class="text">Lorem ipsum dolor sit amet adipisicing elit sed eiusmod tempor incididunt ut labore et dolore magna aliqua. Utna enim ad minim veniam quis nostrud exercitation ulamco laboris nisi aliquip exea comm ayodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</div>
-									<a href="global-coach.html" class="read-more"><span class="fa fa-angle-right"></span> Read More</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="lower-box">
-						<div class="category">case study - financial</div>
-						<h3><a href="global-coach.html">Full Training & Workshop Inventory System</a></h3>
-					</div>
-				</div>
-			</div>
-			
-			<!--Case Block-->
-			<div class="case-block">
-				<div class="inner-box">
-					<div class="image">
-						<img src="images/resource/case-1.jpg" alt="" />
-						<div class="overlay-box">
-							<div class="overlay-inner">
-								<div class="content">
-									<div class="text">Lorem ipsum dolor sit amet adipisicing elit sed eiusmod tempor incididunt ut labore et dolore magna aliqua. Utna enim ad minim veniam quis nostrud exercitation ulamco laboris nisi aliquip exea comm ayodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</div>
-									<a href="global-coach.html" class="read-more"><span class="fa fa-angle-right"></span> Read More</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="lower-box">
-						<div class="category">case study - strategies</div>
-						<h3><a href="global-coach.html">Global Business Managment Tracking Apps</a></h3>
-					</div>
-				</div>
-			</div>
-			
-			<!--Case Block-->
-			<div class="case-block">
-				<div class="inner-box">
-					<div class="image">
-						<img src="images/resource/case-2.jpg" alt="" />
-						<div class="overlay-box">
-							<div class="overlay-inner">
-								<div class="content">
-									<div class="text">Lorem ipsum dolor sit amet adipisicing elit sed eiusmod tempor incididunt ut labore et dolore magna aliqua. Utna enim ad minim veniam quis nostrud exercitation ulamco laboris nisi aliquip exea comm ayodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</div>
-									<a href="global-coach.html" class="read-more"><span class="fa fa-angle-right"></span> Read More</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="lower-box">
-						<div class="category">case study - managment</div>
-						<h3><a href="global-coach.html">Business & Planning With Task Completion</a></h3>
-					</div>
-				</div>
-			</div>
-			
-			<!--Case Block-->
-			<div class="case-block">
-				<div class="inner-box">
-					<div class="image">
-						<img src="images/resource/case-3.jpg" alt="" />
-						<div class="overlay-box">
-							<div class="overlay-inner">
-								<div class="content">
-									<div class="text">Lorem ipsum dolor sit amet adipisicing elit sed eiusmod tempor incididunt ut labore et dolore magna aliqua. Utna enim ad minim veniam quis nostrud exercitation ulamco laboris nisi aliquip exea comm ayodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</div>
-									<a href="global-coach.html" class="read-more"><span class="fa fa-angle-right"></span> Read More</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="lower-box">
-						<div class="category">case study - corporate</div>
-						<h3><a href="global-coach.html">Business & Planning With Task Completion</a></h3>
-					</div>
-				</div>
-			</div>
-			
-			<!--Case Block-->
-			<div class="case-block">
-				<div class="inner-box">
-					<div class="image">
-						<img src="images/resource/case-4.jpg" alt="" />
-						<div class="overlay-box">
-							<div class="overlay-inner">
-								<div class="content">
-									<div class="text">Lorem ipsum dolor sit amet adipisicing elit sed eiusmod tempor incididunt ut labore et dolore magna aliqua. Utna enim ad minim veniam quis nostrud exercitation ulamco laboris nisi aliquip exea comm ayodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</div>
-									<a href="global-coach.html" class="read-more"><span class="fa fa-angle-right"></span> Read More</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="lower-box">
-						<div class="category">case study - financial</div>
-						<h3><a href="global-coach.html">Full Training & Workshop Inventory System</a></h3>
-					</div>
-				</div>
-			</div>
-			
-		</div>
-	</section>
-	<!--End Case Section-->
-	
-	<!--Testimonial Section-->
-	<section class="testimonial-section">
-		<div class="auto-container">
-			<!--Sec Title-->
-			<div class="sec-title">
-				<h2>What Clients Saying</h2>
-				<div class="title-text">Automate & Simplify The Whole Process</div>
-			</div>
-			<div class="single-item-carousel owl-carousel owl-theme">
-				
-				<!--Testimonial Block Two-->
-				<div class="testimonial-block-two">
-					<div class="inner-box">
-						<div class="row clearfix">
-							<!--Content Column-->
-							<div class="content-column col-lg-7 col-md-7 col-sm-12">
-								<div class="inner-column">
-									<div class="text">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comod duis aute irure dolor reprehenderit voluptate velit esse cillum dolore fugiat nulla pariatur eaxcepteur sint occaecat cupidatat non proident sunt in culpa qui officia.</div>
-									<div class="author">Camron White</div>
-								</div>
-							</div>
-							<!--Image Column-->
-							<div class="image-column col-lg-5 col-md-5 col-sm-12">
-								<div class="inner-column">
-									<div class="image">
-										<img src="images/resource/author-1.jpg" alt="" />
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				
-				<!--Testimonial Block Two-->
-				<div class="testimonial-block-two">
-					<div class="inner-box">
-						<div class="row clearfix">
-							<!--Content Column-->
-							<div class="content-column col-lg-7 col-md-7 col-sm-12">
-								<div class="inner-column">
-									<div class="text">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comod duis aute irure dolor reprehenderit voluptate velit esse cillum dolore fugiat nulla pariatur eaxcepteur sint occaecat cupidatat non proident sunt in culpa qui officia.</div>
-									<div class="author">Camron White</div>
-								</div>
-							</div>
-							<!--Image Column-->
-							<div class="image-column col-lg-5 col-md-5 col-sm-12">
-								<div class="inner-column">
-									<div class="image">
-										<img src="images/resource/author-1.jpg" alt="" />
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				
-				<!--Testimonial Block Two-->
-				<div class="testimonial-block-two">
-					<div class="inner-box">
-						<div class="row clearfix">
-							<!--Content Column-->
-							<div class="content-column col-lg-7 col-md-7 col-sm-12">
-								<div class="inner-column">
-									<div class="text">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comod duis aute irure dolor reprehenderit voluptate velit esse cillum dolore fugiat nulla pariatur eaxcepteur sint occaecat cupidatat non proident sunt in culpa qui officia.</div>
-									<div class="author">Camron White</div>
-								</div>
-							</div>
-							<!--Image Column-->
-							<div class="image-column col-lg-5 col-md-5 col-sm-12">
-								<div class="inner-column">
-									<div class="image">
-										<img src="images/resource/author-1.jpg" alt="" />
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				
-			</div>
-		</div>
-	</section>
-	<!--End Testimonial Section-->
-	
-	<!--Fluid Section Two-->
-    <section class="fluid-section-two">
-    	<div class="outer-container clearfix">
-        	
-            <!--Image Column-->
-            <div class="image-column" style="background-image:url(images/resource/image-2.jpg);">
-            	<figure class="image-box"><img src="images/resource/image-2.jpg" alt=""></figure>
-            </div>
-            
-        	<!--Content Column-->
-            <div class="content-column">
-            	<div class="inner-column">
-					<!--Sec Title-->
-					<div class="sec-title light">
-						<h2>Need zemen Support?</h2>
-						<div class="title-text">Automate & Simplify The Whole Process</div>
-					</div>
-					
-					<!-- Support Form -->
-                    <div class="support-form">
-                            
-                        <!--Contact Form-->
-                        <form method="post" action="https://t.commonsupport.com/zemen/contact.html">
-                            <div class="row clearfix">
-                            
-								<div class="form-group col-lg-6 col-md-6 col-sm-12">
-									<input type="text" name="username" placeholder="Your Name" required>
-								</div>
-								
-								<div class="form-group col-lg-6 col-md-6 col-sm-12">
-									<input type="text" name="email" placeholder="Email" required>
-								</div>
-								
-								<div class="form-group col-lg-6 col-md-6 col-sm-12">
-									<input type="text" name="phone" placeholder="Phone" required>
-								</div>
-								
-								<!--Form Group-->
-								<div class="form-group col-lg-6 col-md-6 col-sm-12">
-									<select class="custom-select-box">
-										<option>Service Required</option>
-										<option>Service One</option>
-										<option>Service Two</option>
-										<option>Service Three</option>
-										<option>Service Four</option>
-									</select>
-								</div>
-								
-								<div class="form-group col-lg-12 col-md-12 col-sm-12">
-									<textarea name="message" placeholder="Message"></textarea>
-								</div>
-								
-								<div class="form-group col-lg-12 col-md-12 col-sm-12">
-                                    <button class="theme-btn btn-style-two" type="submit" name="submit-form">Send Message</button>
-                                </div>
-								
-							</div>
-						</form>
-					</div>
-					
-				</div>
-			</div>
-			
-		</div>
-	</section>
-	
-	<!--News Section-->
-	<section class="news-section">
-		<div class="auto-container">
-			<!--Sec Title-->
-			<div class="sec-title">
-				<h2>Latest zemen News</h2>
-				<div class="title-text">Automate & Simplify The Whole Process</div>
-			</div>
-			<div class="row clearfix">
-				
-				<!--Blocks Column-->
-				<div class="blocks-column col-lg-6 col-md-12 col-sm-12">
-					<div class="inner-column">
-					
-						<!--News Block-->
-						<div class="news-block">
-							<div class="inner-box">
-								<ul class="post-info">
-									<li>SEPtember 23, 2018</li>
-									<li>Consultant</li>
-								</ul>
-								<h3><a href="blog-single.html">Consecter elit duied aiusmod tempor didunt labore dolory</a></h3>
-							</div>
-						</div>
-						
-						<!--News Block-->
-						<div class="news-block">
-							<div class="inner-box">
-								<ul class="post-info">
-									<li>august 25, 2018</li>
-									<li>finance</li>
-								</ul>
-								<h3><a href="blog-single.html">Ipsum dolor sit amet adipisicing elit, dolore magns aliqua enim </a></h3>
-							</div>
-						</div>
-						
-						<!--News Block-->
-						<div class="news-block">
-							<div class="inner-box">
-								<ul class="post-info">
-									<li>SEPtember 23, 2018</li>
-									<li>business</li>
-								</ul>
-								<h3><a href="blog-single.html">Sunt in culpa qui officia deserunt mollit animed kyest laborum</a></h3>
-							</div>
-						</div>
-						
-					</div>
-				</div>
-				
-				<!--Image Column-->
-				<div class="image-column col-lg-6 col-md-12 col-sm-12">
-					<div class="inner-column wow fadeIn" data-wow-delay="0ms" data-wow-duration="1500ms">
-						<div class="image">
-							<img src="images/resource/news-1.jpg" alt="" />
-						</div>
-					</div>
-				</div>
-				
-			</div>
-		</div>
-	</section>
-	<!--End News Section-->
-	
-	<!--Call To Action Section-->
-	<div class="call-to-action-section">
-		<div class="outer-container">
-			<div class="clearfix">
-			
-				<!--Left Column-->
-				<div class="left-column clearfix">
-					<div class="image-layer" style="background-image: url(images/background/1.jpg)"></div>
-					<div class="inner-column">
-						<h2>We help you to unlock & unleash the power <br> within your large scale Business</h2>
-					</div>
-				</div>
-				
-				<!--Right Column-->
-				<div class="right-column">
-					<div class="inner-column">
-						<a href="#" class="theme-btn btn-style-four">Book a Consultation</a>
-					</div>
-				</div>
-				
-			</div>
-		</div>
-	</div>
-	<!--End Call To Action Section-->
-	
-	<!--Main Footer-->
-    <footer class="main-footer">
-    	<div class="auto-container">
-        	<!--Widgets Section-->
-            <div class="widgets-section">
-            	<div class="row clearfix">
-                	
-                    <!--Column-->
-                    <div class="big-column col-lg-6 col-md-12 col-sm-12">
-						<div class="row clearfix">
-						
-                        	<!--Footer Column-->
-                            <div class="footer-column col-lg-6 col-md-6 col-sm-12">
-                                <div class="footer-widget logo-widget">
-									<div class="logo">
-										<a href="index.html"><img src="images/footer-logo.png" alt="" /></a>
-									</div>
-									<div class="text">58 BalSouth Lane, Harward Street Newyork 33025</div>
-									<ul class="list-style-one">
-										<li><span>Phone:</span>  1-800-369-8527</li>
-										<li><span>Email:</span>  support@zemencon.com</li>
-										<li><span>Working Hours:</span>  Mon - Fri: 9am - 6pm</li>
-									</ul>
-									<!--Social Icon One-->
-									<ul class="social-icon-one">
-										<li><a href="#"><span class="fa fa-facebook"></span></a></li>
-										<li><a href="#"><span class="fa fa-linkedin"></span></a></li>
-										<li><a href="#"><span class="fa fa-vimeo"></span></a></li>
-										<li><a href="#"><span class="fa fa-google-plus"></span></a></li>
-										<li><a href="#"><span class="fa fa-twitter"></span></a></li>
-									</ul>
-								</div>
-							</div>
-							
-							<!--Footer Column-->
-                            <div class="footer-column col-lg-6 col-md-6 col-sm-12">
-                                <div class="footer-widget links-widget">
-									<h2>Quick Links</h2>
-                                	<ul class="footer-link">
-										<li><a href="#">About Us</a></li>
-										<li><a href="#">Our Services</a></li>
-										<li><a href="#">Testimonials</a></li>
-										<li><a href="#">Our Projects</a></li>
-										<li><a href="#">Latest News</a></li>
-										<li><a href="#">Privacy Policy</a></li>
-										<li><a href="#">Contact Us</a></li>
-									</ul>
-								</div>
-							</div>
-							
-						</div>
-					</div>
-					
-					<!--Column-->
-                    <div class="big-column col-lg-6 col-md-12 col-sm-12">
-						<div class="row clearfix">
-							
-							<!--Footer Column-->
-                            <div class="footer-column col-lg-6 col-md-6 col-sm-12">
-                                <div class="footer-widget posts-widget">
-									<h2>Recent Posts</h2>
-									
-									<article class="post">
-										<div class="text"><a href="blog-single.html">Isolate & Reframe Your Beliefs</a></div>
-										<ul class="post-date">
-											<li>By Ken Smith</li>
-											<li>Sep 25 2018</li>
-										</ul>
-									</article>
-									
-									<article class="post">
-										<div class="text"><a href="blog-single.html">Take Action For Your Business</a></div>
-										<ul class="post-date">
-											<li>By Thomas</li>
-											<li>Sep 25 2018</li>
-										</ul>
-									</article>
-									
-									<article class="post">
-										<div class="text"><a href="blog-single.html">Improve Your Business Ideas</a></div>
-										<ul class="post-date">
-											<li>By Admin</li>
-											<li>Sep 25 2018</li>
-										</ul>
-									</article>
-									
-								</div>
-							</div>
-							
-							<!--Footer Column-->
-                            <div class="footer-column col-lg-6 col-md-6 col-sm-12">
-                                <div class="footer-widget newsletter-widget">
-									<h2>Our Newsletter</h2>
-									<div class="text">Get in your inbox the latest News and Offers from zemen</div>
-									<div class="newsletter-form">
-                                        <form method="post" action="https://t.commonsupport.com/zemen/contact.html">
-                                            <div class="form-group">
-                                                <input type="email" name="email" value="" placeholder="Email address" required="">
-                                            </div>
-                                            <div class="form-group">
-                                                <button type="submit" class="theme-btn btn-style-one">Subscribe</button>
-                                            </div>
-                                        </form>
-                                    </div>
-								</div>
-							</div>
-							
-						</div>
-					</div>
-					
-				</div>
-			</div>
-		</div>
-		<!--Footer Bottom-->
-        <div class="footer-bottom">
-        	<div class="auto-container">
-            	<div class="row clearfix">
-                	<div class="column col-md-6 col-sm-12 col-xs-12">
-                    	<div class="copyright">Copyrights &copy; 2018 zemen Consulting. All Rights Reserved. </div>
-                    </div>
-                    <div class="column col-md-6 col-sm-12 col-xs-12">
-                    	<ul class="footer-nav">
-                        	<li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">Legal Terms</a></li>
-                            <li><a href="#">FAQ’s</a></li>
-                            <li><a href="#">Support</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="shop.html">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="media.html">Media</a>
+            </li>
+          </ul>
+          <a href="contact.html" class="btn btn-primary text-uppercase btn-lg">Reach Us</a>
         </div>
-	</footer>
-	<!--End Main Footer-->
-	
-</div>
-<!--End pagewrapper--><!--Scroll to top--><div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-double-up"></span></div>
+      </div>
+    </nav>
+    <!-- header -->
+    <div class="py-5 m-auto">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-xl-6">
+            <div class="text-white" data-aos="fade-right" data-aos-duration="1000">
+              <p class="fw-bold text-uppercase">Hey friends,</p>
+              <h1 class="fw-bold display-4">
+                We’re Name,A Modern Digital Agency Based in Moldova
+              </h1>
+              <p class="lead">
+                Lorem ipsum dolor amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt labore dolore.
+              </p>
+              <div class="d-flex align-items-center gap-3 mt-5">
+                <a href="#" class="btn btn-primary btn-lg">Learn More</a>
+                <a href="#" class="btn btn-outline-light btn-lg">See our services</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- What We Do -->
+  <div class="py-5">
+    <div class="container py-5">
+      <div class="row justify-content-center mb-5">
+        <div class="col-xl-6 col-lg-8 col-md-9 col-12">
+          <div class="text-center">
+            <h1 class="fw-bold">What We Do</h1>
+            <p class="text-muted">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="border rounded p-5 box" data-aos="flip-left" data-aos-duration="1000">
+            <i class="ri-computer-line ri-2x text-secondary"></i>
+            <div class="pt-2">
+              <h5 class="fw-bold">Web Design</h5>
+              <p class="mb-0">
+                Lorem ipsum dolor amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt labore dolore.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="border rounded p-5 box" data-aos="flip-right" data-aos-duration="1000">
+            <i class="ri-brush-line ri-2x text-secondary"></i>
+            <div class="pt-2">
+              <h5 class="fw-bold">Graphic Design</h5>
+              <p class="mb-0">
+                Lorem ipsum dolor amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt labore dolore.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="border rounded p-5 box" data-aos="flip-left" data-aos-duration="1000">
+            <i class="ri-code-s-slash-line ri-2x text-secondary"></i>
+            <div class="pt-2">
+              <h5 class="fw-bold">Web Development</h5>
+              <p class="mb-0">
+                Lorem ipsum dolor amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt labore dolore.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="border rounded p-5 box" data-aos="flip-left" data-aos-duration="1000">
+            <i class="ri-dashboard-line ri-2x text-secondary"></i>
+            <div class="pt-2">
+              <h5 class="fw-bold">Social Media</h5>
+              <p class="mb-0">
+                Lorem ipsum dolor amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt labore dolore.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="border rounded p-5 box" data-aos="flip-right" data-aos-duration="1000">
+            <i class="ri-line-chart-line ri-2x text-secondary"></i>
+            <div class="pt-2">
+              <h5 class="fw-bold">Reliable Results</h5>
+              <p class="mb-0">
+                Lorem ipsum dolor amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt labore dolore.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="border rounded p-5 box" data-aos="flip-left" data-aos-duration="1000">
+            <i class="ri-search-line ri-2x text-secondary"></i>
+            <div class="pt-2">
+              <h5 class="fw-bold">Seo</h5>
+              <p class="mb-0">
+                Lorem ipsum dolor amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt labore dolore.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="d-flex align-items-center justify-content-center gap-3 mt-5">
+            <a href="#" class="btn btn-primary btn-lg">View Pricing</a>
+            <a href="#" class="btn btn-outline-primary btn-lg">Take Action</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- some information -->
+  <div class="bg-light py-5">
+    <div class="container py-5">
+      <div class="row align-items-center g-md-5 g-4">
+        <div class="col-lg-6 col-12">
+          <img src="img/homepage-2.png" alt="some-points" class="img-fluid" data-aos="fade-right"
+            data-aos-duration="1000" />
+        </div>
+        <div class="col-lg-6 col-12">
+          <div class="mb-5" data-aos="fade-left" data-aos-duration="1000">
+            <h6 class="text-primary">Venenatis crassed</h6>
+            <h1 class="fw-bold py-2">
+              Quisvarius Buam Muisque Ideum Velmart
+            </h1>
+            <p class="teext-muted">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua
+              aenean.
+            </p>
+          </div>
+          <div class="animate" data-aos="fade-left" data-aos-duration="1000">
+            <div class="d-flex align-items-center gap-4 mb-4 pb-3">
+              <div class="bg-primary rounded-circle flex-shrink-0 icon">
+                <i class="ri-image-fill ri-2x text-white"></i>
+              </div>
+              <div>
+                <h6 class="fw-bold">Elementum sagittis vitae</h6>
+                <p class="text-muted mb-0">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore.
+                </p>
+              </div>
+            </div>
+            <div class="d-flex align-items-center gap-4 mb-4 pb-3">
+              <div class="bg-primary rounded-circle flex-shrink-0 icon">
+                <i class="ri-store-2-fill ri-2x text-white"></i>
+              </div>
+              <div>
+                <h6 class="fw-bold">Commodo elitat imperdiet</h6>
+                <p class="text-muted mb-0">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore.
+                </p>
+              </div>
+            </div>
+            <div class="d-flex align-items-center gap-4">
+              <div class="bg-primary rounded-circle flex-shrink-0 icon">
+                <i class="ri-truck-fill ri-2x text-white"></i>
+              </div>
+              <div>
+                <h6 class="fw-bold">Quis veleros donecac</h6>
+                <p class="text-muted mb-0">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- contact us now -->
+  <div class="py-5">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-12">
+          <div class="bg-primary rounded-3 p-5" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="row align-items-center justify-content-between">
+              <div class="col-lg-6 col-12">
+                <h2 class="fw-bold text-white mb-0">
+                  Do you have any question?<br />
+                  Feel free to contact us anytime.
+                </h2>
+              </div>
+              <div class="col-lg-2 col-12">
+                <a href="#" class="btn btn-light btn-lg">Contact us now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- some checks -->
+  <div class="bg-light py-5">
+    <div class="container py-5">
+      <div class="row align-items-center g-md-5 g-4">
+        <div class="col-lg-6 col-12">
+          <img src="img/meeting.png" alt="meeting" class="img-fluid rounded-3" data-aos="fade-right"
+            data-aos-duration="1000" />
+        </div>
+        <div class="col-lg-6 col-12">
+          <div class="mb-5" data-aos="fade-left" data-aos-duration="1000">
+            <h1 class="fw-bold pb-2">
+              Montes nascetur ridiculus mus mauris vitae
+            </h1>
+            <p class="text-muted">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua
+              aenean.
+            </p>
+          </div>
+          <div class="row g-4">
+            <div class="col-lg-6 col-12">
+              <ul class="list-unstyled d-grid gap-3" data-aos="fade-left" data-aos-duration="1000">
+                <li>
+                  <i class="ri-checkbox-circle-fill ri-lg text-primary me-1"></i>Mollis aliquam ut porttitor
+                </li>
+                <li>
+                  <i class="ri-checkbox-circle-fill ri-lg text-primary me-1"></i>Options to choose list design
+                </li>
+                <li>
+                  <i class="ri-checkbox-circle-fill ri-lg text-primary me-1"></i>Beautiful interaction transitions
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-6 col-12">
+              <ul class="list-unstyled d-grid gap-3" data-aos="fade-left" data-aos-duration="1000">
+                <li>
+                  <i class="ri-checkbox-circle-fill ri-lg text-primary me-1"></i>Mollis aliquam ut porttitor
+                </li>
+                <li>
+                  <i class="ri-checkbox-circle-fill ri-lg text-primary me-1"></i>Options to choose list design
+                </li>
+                <li>
+                  <i class="ri-checkbox-circle-fill ri-lg text-primary me-1"></i>Beautiful interaction transitions
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- videos -->
+  <div class="bg-dark py-5">
+    <div class="container py-5">
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-4 col-6">
+          <div class="card bg-transparent border-0 rounded-0">
+            <a href="#" class="link-light position-relative" data-bs-toggle="modal" data-bs-target="#videoModal">
+              <img src="img/videos/1.jpg" class="card-img-top rounded-3" alt="video-1" />
+              <span><i class="ri-play-circle-fill ri-3x position-absolute play-button"></i></span>
+            </a>
+            <div class="card-body px-0">
+              <h6 class="card-title text-white">
+                Sed libero enim sed faucibus turpis. Facilisi nullam vehicula.
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6">
+          <div class="card bg-transparent border-0 rounded-0">
+            <a href="#" class="link-light position-relative" data-bs-toggle="modal" data-bs-target="#videoModal">
+              <img src="img/videos/2.jpg" class="card-img-top rounded-3" alt="video-2" />
+              <span><i class="ri-play-circle-fill ri-3x position-absolute play-button"></i></span>
+            </a>
+            <div class="card-body px-0">
+              <h6 class="card-title text-white">
+                Convallis a cras semper auctor neque vitae tempus
+                pellentesque.
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6">
+          <div class="card bg-transparent border-0 rounded-0">
+            <a href="#" class="link-light position-relative" data-bs-toggle="modal" data-bs-target="#videoModal">
+              <img src="img/videos/3.jpg" class="card-img-top rounded-3" alt="video-3" />
+              <span><i class="ri-play-circle-fill ri-3x position-absolute play-button"></i></span>
+            </a>
+            <div class="card-body px-0">
+              <h6 class="card-title text-white">
+                Consectetur libero id faucibus nisl tincidunt eget nullam non.
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6">
+          <div class="card bg-transparent border-0 rounded-0">
+            <a href="#" class="link-light position-relative" data-bs-toggle="modal" data-bs-target="#videoModal">
+              <img src="img/videos/4.jpg" class="card-img-top rounded-3" alt="video-4" />
+              <span><i class="ri-play-circle-fill ri-3x position-absolute play-button"></i></span>
+            </a>
+            <div class="card-body px-0">
+              <h6 class="card-title text-white">
+                Orci a scelerisque purus semper eget duis at tellus.
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Some Insights -->
+  <div class="py-5">
+    <div class="container py-5">
+      <div class="row justify-content-center mb-5">
+        <div class="col-xl-6 col-lg-8 col-md-9 col-12">
+          <div class="text-center">
+            <h1 class="fw-bold">Some Insights</h1>
+            <p class="text-muted">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 some-insight-video">
+          <a href="#" class="position-relative" data-bs-toggle="modal" data-bs-target="#videoModal">
+            <img src="img/meeting-video.jpg" alt="meeting-video" class="img-fluid rounded-3" />
+            <span><i
+                class="ri-play-circle-fill display-2 position-absolute top-0 bottom-0 some-insight-video-play-button"></i></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- numbers -->
+  <div class="bg-dark py-5">
+    <div class="container pt-5 mt-5">
+      <div class="row g-4 pt-5 mt-5">
+        <div class="col-lg-3 col-md-6 col-6">
+          <div class="text-center">
+            <h2 class="fw-bold text-white">979K</h2>
+            <p class="text-primary">Lines of code</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-6">
+          <div class="text-center">
+            <h2 class="fw-bold text-white">280K</h2>
+            <p class="text-primary">Cups of cofee</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-6">
+          <div class="text-center">
+            <h2 class="fw-bold text-white">135K</h2>
+            <p class="text-primary">Solved tickets</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-6">
+          <div class="text-center">
+            <h2 class="fw-bold text-white">250K</h2>
+            <p class="text-primary">Active installs</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- What peoples say about us -->
+  <div class="py-5">
+    <div class="container pt-5">
+      <div class="row justify-content-center mb-5">
+        <div class="col-xl-6 col-lg-8 col-md-9 col-12">
+          <div class="text-center">
+            <h1 class="fw-bold">What peoples say about uss</h1>
+            <p class="text-muted">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row g-4 mb-5">
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="bg-white rounded-3 shadow p-5" data-aos="flip-left" data-aos-duration="1000">
+            <div class="d-flex align-items-center gap-3 mb-4">
+              <img src="img/profile/1.jpg" alt="people-1" class="img-fluid rounded-circle people-img" />
+              <div>
+                <h6 class="fw-bold mb-1">Patricia Muller</h6>
+                <p class="mb-0 text-muted">WordPress Developer</p>
+              </div>
+            </div>
+            <p class="mb-0">
+              “You’ve read about the impoce of the being courageous,
+              rebelliousi and it’s imaginative. These are all vital for
+              ingredients in an effective advertising they must.”
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="bg-white rounded-3 shadow p-5" data-aos="flip-right" data-aos-duration="1000">
+            <div class="d-flex align-items-center gap-3 mb-4">
+              <img src="img/profile/2.jpg" alt="people-2" class="img-fluid rounded-circle people-img" />
+              <div>
+                <h6 class="fw-bold mb-1">Patricia Muller</h6>
+                <p class="mb-0 text-muted">WordPress Developer</p>
+              </div>
+            </div>
+            <p class="mb-0">
+              “You’ve read about the impoce of the being courageous,
+              rebelliousi and it’s imaginative. These are all vital for
+              ingredients in an effective advertising they must.”
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="bg-white rounded-3 shadow p-5" data-aos="flip-left" data-aos-duration="1000">
+            <div class="d-flex align-items-center gap-3 mb-4">
+              <img src="img/profile/3.jpg" alt="people-3" class="img-fluid rounded-circle people-img" />
+              <div>
+                <h6 class="fw-bold mb-1">Patricia Muller</h6>
+                <p class="mb-0 text-muted">WordPress Developer</p>
+              </div>
+            </div>
+            <p class="mb-0">
+              “You’ve read about the impoce of the being courageous,
+              rebelliousi and it’s imaginative. These are all vital for
+              ingredients in an effective advertising they must.”
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Build Something Together -->
+  <div class="pt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="build-something-together shadow rounded-3 py-5" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="text-center text-white py-5">
+              <div class="mb-5">
+                <h1 class="fw-bold mb-3">Let’s Build Something Together</h1>
+                <p class="lead px-lg-5">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut<br />
+                  labore et dolore magna aliqua.
+                </p>
+              </div>
+              <a href="#" class="btn btn-primary btn-lg">Reach Out now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer -->
+  <footer class="footer">
+    <div class="footer-top bg-black text-white py-5 mt-5">
+      <div class="container pt-5 mt-5 mb-5">
+        <div class="row g-md-5 g-4 pt-5">
+          <div class="col-lg-3">
+            <div class="mb-4">
+              <h6 class="fw-bold pb-2">Contact Info</h6>
+              <p class="text-secondary-emphasis">
+                Lorem ipsum dolor sit amet, ea has ignota putent. Ridens
+                aliquid indoctum an est, his ad movet graece.
+              </p>
+            </div>
+            <div>
+              <!-- Address -->
+              <div class="d-flex align-items-center gap-3 mb-4">
+                <div class="border border-secondary rounded-circle text-secondary-emphasis footer-icon">
+                  <i class="ri-map-pin-2-line ri-lg"></i>
+                </div>
+                <div>
+                  <h6 class="fw-bold text-secondary-emphasis mb-1">
+                    Address:
+                  </h6>
+                  <p class="mb-0 text-secondary-emphasis small">
+                    Richmond Hill, New York 11419
+                  </p>
+                </div>
+              </div>
+              <!-- Phone -->
+              <div class="d-flex align-items-center gap-3 mb-4">
+                <div class="border border-secondary rounded-circle text-secondary-emphasis footer-icon">
+                  <i class="ri-phone-line ri-lg"></i>
+                </div>
+                <div>
+                  <h6 class="fw-bold text-secondary-emphasis mb-1">Phone:</h6>
+                  <a href="contact-us.html" class="small link-secondary">+1 212-835-5044</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="mb-5">
+              <h6 class="fw-bold pb-2">About Us</h6>
+              <ul class="list-unstyled d-grid gap-2">
+                <li>
+                  <a href="#" class="link-secondary">About Organization</a>
+                </li>
+                <li><a href="#" class="link-secondary">Our Clients</a></li>
+                <li><a href="#" class="link-secondary">Our Partners</a></li>
+              </ul>
+            </div>
+            <div>
+              <h6 class="fw-bold pb-2">Achievements</h6>
+              <p class="text-secondary-emphasis">
+                Vim in meis verterem menandri, ea iuvaret delectus verterem
+                qui, nec ad ferri corpora.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="mb-5">
+              <h6 class="fw-bold pb-2">Quick links</h6>
+              <ul class="list-unstyled d-grid gap-2">
+                <li><a href="#" class="link-secondary">Simple Product</a></li>
+                <li>
+                  <a href="#" class="link-secondary">Variable Product</a>
+                </li>
+                <li>
+                  <a href="#" class="link-secondary">Grouped Product</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h6 class="fw-bold pb-2">Useful Information</h6>
+              <p class="text-secondary-emphasis">
+                Vim in meis verterem menandri, ea iuvaret delectus verterem
+                qui, nec ad ferri corpora.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="mb-5">
+              <h6 class="fw-bold pb-2">Important Links</h6>
+              <ul class="list-unstyled d-grid gap-2">
+                <li><a href="#" class="link-secondary">Privacy Policy</a></li>
+                <li><a href="#" class="link-secondary">Coolies Policy</a></li>
+                <li>
+                  <a href="#" class="link-secondary">Teams &amp; Conditions</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h6 class="fw-bold pb-2">Shipping Information</h6>
+              <p class="text-secondary-emphasis">
+                Vim in meis verterem menandri, ea iuvaret delectus verterem
+                qui, nec ad ferri corpora.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="footer bg-dark py-4">
+    <div class="container">
+      <div class="row py-5">
+        <div class="col-md-6 pe-5">
+          <h3 class="fw-bold text-white">
+            Defining interaction patterns best suited in the context
+          </h3>
+          <p class="fs-5 text-warning pt-1 pt-3 mb-0">
+            <a href="https://iamosahan.com/cdn-cgi/l/email-protection" class="__cf_email__"
+              data-cfemail="bfd7dad3d3d0ffc6d0cacddad2ded6d391cccbcadbd6d0">[email&#160;protected]</a>
+          </p>
+        </div>
+        <div class="col-md-6 col-12">
+          <div class="row gx-4">
+            <div class="col-6">
+              <h6 class="fw-bold text-white">Contact</h6>
+              <p class="text-white-50">
+                Interface behavior like drag-drop, selections, and mouse-over
+                action.
+              </p>
+            </div>
+            <div class="col-6">
+              <h6 class="fw-bold text-white">Location</h6>
+              <p class="text-white-50">
+                Effectively communicating strenghts of the system
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bg-black py-4">
+    <div class="container">
+      <div class="row align-items-center justify-content-between py-4">
+        <div class="col-auto">
+          <div class="d-flex align-items-center gap-5 footer-links">
+            <a href="index.html" class="link-secondary">HOME</a>
+            <a href="#" class="link-secondary">ABOUT</a>
+            <a href="#" class="link-secondary">BLOG</a>
+            <a href="contact.html" class="link-secondary">CONTACT</a>
+          </div>
+        </div>
+        <div class="col-auto d-flex gap-5">
+          <p class="text-center m-0 text-white-50">
+            Copyright © <a href="#" class="text-white">Website Name</a> 2025
+          </p>
+          <div class="d-flex align-items-center gap-4">
+            <a href="#" class="link-secondary"><i class="ri-facebook-circle-fill ri-lg"></i></a>
+            <a href="#" class="link-secondary"><i class="ri-twitter-fill ri-lg"></i></a>
+            <a href="#" class="link-secondary"><i class="ri-instagram-fill ri-lg"></i></a>
+            <a href="#" class="link-secondary"><i class="ri-dribbble-line ri-lg"></i></a>
+            <a href="#" class="link-secondary"><i class="ri-slack-fill ri-lg"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Nav Sidebar -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="sidebar">
+    <div class="offcanvas-header d-flex align-items-center justify-content-between">
+      <div class="position-relative d-flex align-items-center gap-2 site-brand">
+        <!-- <i class="ri-briefcase-line fs-2 lh-1 text-primary"></i> -->
+        <div class="lh-1">
+          <h5 class="fw-bold m-0">People Better</h5>
+          <!-- <small class="text-muted">Template</small> -->
+        </div>
+        <a class="stretched-link" href="index.html"></a>
+      </div>
+      <a href="#" class="link-light" data-bs-dismiss="offcanvas" aria-label="Close"><i
+          class="ri-close-line ri-lg"></i></a>
+    </div>
+    <div class="offcanvas-body">
+      <div class="sidebar-nav">
+        <ul class="navbar-nav mb-3">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html"><i class="ri-apps-2-line"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
 
-<script src="js/jquery.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-<script src="js/jquery.fancybox.js"></script>
-<script src="js/appear.js"></script>
-<script src="js/owl.js"></script>
-<script src="js/wow.js"></script>
-<script src="js/slick.js"></script>
-<script src="js/jquery-ui.js"></script>
-<script src="js/script.js"></script>
+          <li class="nav-item">
+            <a class="nav-link" href="shop.html">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="media.html">Media</a>
+          </li>
+        </ul>
+        <a href="contact.html" class="btn btn-light btn-sm w-100 py-3">Reach us</a>
+      </div>
+    </div>
+  </div>
+  <!-- Video Modal -->
+  <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content bg-transparent border-0 rounded-0">
+        <div class="modal-header d-flex justify-content-end border-0 py-0">
+          <a href="#" class="link-light" data-bs-dismiss="modal" aria-label="Close"><i
+              class="ri-close-fill ri-2x"></i></a>
+        </div>
+        <div class="modal-body px-5">
+          <div class="ratio ratio-16x9">
+            <iframe src="https://www.youtube.com/embed/gu-HhgJ7vfM?si=egwKhEDMVeXg3IuJ" title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <!-- Bootsrap Bundle Js -->
+
+  <script src="vender/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Jquery Js -->
+  <script src="vender/jquery/jquery-3.6.4.min.js"></script>
+  <!-- AOS Js -->
+  <script src="vender/aos/dist/aos.js"></script>
+  <!-- Custom Js -->
+  <script src="js/script.js"></script>
 </body>
 
-<!-- Mirrored from t.commonsupport.com/zemen/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 23 Apr 2025 17:33:23 GMT -->
 </html>
