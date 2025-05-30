@@ -19,6 +19,9 @@ Version: 1.0
 body{
   overflow-x: hidden;
 }
+p{
+  text-align: justify;
+}
 a{
   -webkit-transition: all 0.3s ease 0s;
     -moz-transition: all 0.3s ease 0s;
