@@ -148,3 +148,9 @@ a:hover {
 	align-items: center;
 	justify-content: center;
 }
+/* media query */
+@media (max-width: 991px) {
+	.homepage {
+		margin-top: -120px;
+	}
+}
