@@ -34,7 +34,8 @@
     <!-- Google Fonts - Montserrat -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <!-- Bootstrap Css -->
     <link rel="stylesheet" href="vender/bootstrap/css/bootstrap.min.css" />
     <!-- Icofont Css -->
@@ -47,81 +48,86 @@
     <link rel="stylesheet" href="css/style.css" />
     <!-- Common Css -->
     <link rel="stylesheet" href="css/common.css" />
-    
+
     <!-- Montserrat Font Override -->
-     <style>
-    body,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    p,
-    a,
-    span,
-    div,
-    button,
-    input,
-    textarea,
-    select {
-      font-family: 'Montserrat', sans-serif !important;
-    }
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        a,
+        span,
+        div,
+        button,
+        input,
+        textarea,
+        select {
+            font-family: 'Montserrat', sans-serif !important;
+        }
 
-    p.lead.text-muted {
-      font-weight: 500 !important;
-      text-align: left !important; /* Changed from justify to left */
-    }
-    p.lead.text-center {
-      text-align: center !important;
-    }
-    h1.text-center {
-      text-align: center !important;
-    }
-    p,
-    .lead,
-    .text-muted,
-    .text-white-50 {
-      text-align: left !important; /* Changed from justify to left */
-    }
+        p.lead.text-muted {
+            font-weight: 500 !important;
+            text-align: left !important;
+            /* Changed from justify to left */
+        }
 
-    p,
-    .lead,
-    .text-muted,
-    .text-white-50 {
-      text-align: justify !important;
-    }
+        p.lead.text-center {
+            text-align: center !important;
+        }
 
-    .fw-light {
-      font-weight: 300 !important;
-    }
+        h1.text-center {
+            text-align: center !important;
+        }
 
-    .fw-normal {
-      font-weight: 400 !important;
-    }
+        p,
+        .lead,
+        .text-muted,
+        .text-white-50 {
+            text-align: left !important;
+            /* Changed from justify to left */
+        }
 
-    .fw-medium {
-      font-weight: 500 !important;
-    }
+        p,
+        .lead,
+        .text-muted,
+        .text-white-50 {
+            text-align: justify !important;
+        }
 
-    .fw-semibold {
-      font-weight: 600 !important;
-    }
+        .fw-light {
+            font-weight: 300 !important;
+        }
 
-    .fw-bold {
-      font-weight: 700 !important;
-    }
+        .fw-normal {
+            font-weight: 400 !important;
+        }
 
-    .fw-bolder {
-      font-weight: 800 !important;
-    }
+        .fw-medium {
+            font-weight: 500 !important;
+        }
 
-    body {
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      text-rendering: optimizeLegibility;
-    }
-  </style>
+        .fw-semibold {
+            font-weight: 600 !important;
+        }
+
+        .fw-bold {
+            font-weight: 700 !important;
+        }
+
+        .fw-bolder {
+            font-weight: 800 !important;
+        }
+
+        body {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            text-rendering: optimizeLegibility;
+        }
+    </style>
 </head>
 
 <body>
@@ -202,50 +208,84 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-12">
-                    <form>
+                    <form id="contactForm"
+                        action="https://gmail.us17.list-manage.com/subscribe/post?u=d164a665617f5f1ef6e6af860&amp;id=6c7ee0b816&amp;f_id=004a5ae0f0"
+                        method="post">
+
                         <div class="mb-4">
                             <label for="name" class="form-label fw-semibold">Name</label>
-                            <input type="text" class="form-control rounded-3 py-3 px-3" id="name" placeholder="Enter your name" style="font-family: 'Montserrat', sans-serif; font-size: 1.08rem;" />
+                            <input type="text" name="FNAME" value="" id="name" class="form-control rounded-3 py-3 px-3"
+                                placeholder="Enter your name"
+                                style="font-family: 'Montserrat', sans-serif; font-size: 1.08rem;" required
+                                data-error="Please enter your name" />
+                            <div class="help-block with-errors"></div>
                         </div>
+
                         <div class="mb-4">
                             <label for="exampleFormControlInput1" class="form-label fw-semibold">Email address</label>
-                            <input type="email" class="form-control rounded-3 py-3 px-3" id="exampleFormControlInput1"
-                                placeholder="name@example.com" style="font-family: 'Montserrat', sans-serif; font-size: 1.08rem;" />
+                            <input type="email" name="EMAIL" value="" id="exampleFormControlInput1"
+                                class="form-control rounded-3 py-3 px-3" placeholder="name@example.com"
+                                style="font-family: 'Montserrat', sans-serif; font-size: 1.08rem;" required
+                                data-error="Please enter your email" />
+                            <div class="help-block with-errors"></div>
                         </div>
+
                         <div class="mb-4">
-                            <label for="subject" class="form-label fw-semibold">Phone</label>
-                            <input type="text" class="form-control rounded-3 py-3 px-3" id="phone" placeholder="Enter your Phone Number" style="font-family: 'Montserrat', sans-serif; font-size: 1.08rem;" />
+                            <label for="phone" class="form-label fw-semibold">Phone</label>
+                            <input type="text" name="PHONE" id="phone" class="form-control rounded-3 py-3 px-3"
+                                placeholder="Enter your Phone Number"
+                                style="font-family: 'Montserrat', sans-serif; font-size: 1.08rem;" required
+                                data-error="Please enter your number" />
+                            <div class="help-block with-errors"></div>
                         </div>
+
                         <div class="mb-4">
-                            <label for="exampleFormControlMessage" class="form-label fw-semibold">Comment or Message *</label>
-                            <textarea class="form-control rounded-3 py-3 px-3" id="exampleFormControlMessage" rows="6"
-                                placeholder="Enter your comment" style="font-family: 'Montserrat', sans-serif; font-size: 1.08rem;"></textarea>
+                            <label for="exampleFormControlMessage" class="form-label fw-semibold">Comment or Message
+                                *</label>
+                            <textarea name="MMERGE6" class="form-control rounded-3 py-3 px-3"
+                                id="exampleFormControlMessage" rows="6" placeholder="Enter your comment"
+                                style="font-family: 'Montserrat', sans-serif; font-size: 1.08rem;" required
+                                data-error="Write your message"></textarea>
+                            <div class="help-block with-errors"></div>
                         </div>
-                        <button type="submit" class="btn btn-dark btn-lg w-100 fw-bold" style="font-family: 'Montserrat', sans-serif;">Send Message</button>
+
+                        <!-- Hidden anti-bot field from Mailchimp -->
+                        <input hidden type="text" name="b_d164a665617f5f1ef6e6af860_6c7ee0b816" tabindex="-1" value="">
+
+                        <button value="Subscribe" name="subscribe" type="submit"
+                            class="btn btn-dark btn-lg w-100 fw-bold"
+                            style="font-family: 'Montserrat', sans-serif; border-radius: 5px;">
+                            Send Message
+                        </button>
+
+                        <div id="msgSubmit" class="h3 text-center hidden"></div>
+                        <div class="clearfix"></div>
                     </form>
+
                 </div>
             </div>
         </div>
     </div>
     <div class="pt-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div class="build-something-together shadow rounded-3 py-5" data-aos="zoom-in" data-aos-duration="1000">
-            <div class="text-center text-white py-5">
-              <div class="mb-5">
-                <h1 class="fw-bold mb-3 text-center">Let’s Connect and Grow Together</h1>
-                <p class="lead text-center px-lg-5">
-                  Start the conversation. We’re listening.
-                </p>
-              </div>
-              <a href="contact.html" class="btn btn-outline-light btn-lg">Reach Out now</a>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="build-something-together shadow rounded-3 py-5" data-aos="zoom-in"
+                        data-aos-duration="1000">
+                        <div class="text-center text-white py-5">
+                            <div class="mb-5">
+                                <h1 class="fw-bold mb-3 text-center">Let’s Connect and Grow Together</h1>
+                                <p class="lead text-center px-lg-5">
+                                    Start the conversation. We’re listening.
+                                </p>
+                            </div>
+                            <a href="contact.html" class="btn btn-outline-light btn-lg">Reach Out now</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </div>
-  </div>
     <!-- footer -->
 
     <div class="footer bg-black py-5 mt-5">
@@ -343,7 +383,7 @@
     <div class="offcanvas offcanvas-end" tabindex="-1" id="sidebar">
         <div class="offcanvas-header d-flex align-items-center justify-content-between">
             <div class="position-relative d-flex align-items-center gap-2 site-brand">
-               
+
                 <div class="lh-1">
                     <h5 class="fw-bold m-0">People Better</h5>
                     <!-- <small class="text-muted">Template</small> -->
