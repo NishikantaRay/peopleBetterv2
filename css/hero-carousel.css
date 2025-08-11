@@ -49,7 +49,7 @@ button,
 input,
 textarea,
 select {
-  font-family: 'Montserrat', sans-serif !important;
+  font-family: "Graphik", Helvetica, sans-serif, Lucida Sans Unicode !important;
 }
 
 p.lead.text-muted {
