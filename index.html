@@ -61,45 +61,48 @@
   </div>
   <!-- Moved navbar scroll effect to external JS file: js/navbar-scroll.js -->
   <link rel="stylesheet" href="css/navbar-scroll.css" />
-  <div class="hero-carousel">
-    <!-- Navbar -->
-    <nav
-      class="navbar osahan-main-nav navbar-expand-lg business-nav w-100 p-0 border-bottom border-white border-opacity-25 position-fixed">
-      <div class="container border-light py-2 py-lg-0">
-        <div class="position-relative d-flex align-items-center gap-2 site-brand">
-          <div class="lh-1">
-            <h5 class="fw-bold m-0 text-white">PeopleBetter</h5>
-          </div>
-          <a class="stretched-link" href="index.html"></a>
+  
+  <!-- Navbar moved outside carousel -->
+  <nav
+    class="navbar osahan-main-nav navbar-expand-lg business-nav w-100 p-0 border-bottom border-white border-opacity-25 position-fixed"
+    style="z-index: 1050; left: 0; right: 0; top: 0;">
+    <div class="container-fluid d-flex justify-content-between align-items-center px-3 py-2 py-lg-0">
+      <div class="d-flex align-items-center gap-2 site-brand">
+        <div class="lh-1">
+          <h5 class="fw-bold m-0 text-white">PeopleBetter</h5>
         </div>
-        <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="offcanvas"
-          data-bs-target="#sidebar" aria-controls="sidebar">
-          <i class="ri-menu-3-line text-white ri-lg"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav m-auto gap-5">
-            <li class="nav-item">
-              <a class="nav-link active" href="index.html"> Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="services.html">Services</a>
-            </li>
-            <!-- <li class="nav-item">
-              <a class="nav-link" href="shop.html">Shop</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="media.html">Media</a>
-            </li> -->
-          </ul>
-          <a href="contact.html" class="btn btn-light text-uppercase btn-lg">Reach Us</a>
-        </div>
+        <a class="stretched-link" href="index.html"></a>
       </div>
-    </nav>
-    
+      <button class="navbar-toggler border-0 shadow-none d-lg-none flex-shrink-0" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#sidebar" aria-controls="sidebar"
+        style="z-index: 1060; background: rgba(255,255,255,0.15); padding: 8px 12px; border-radius: 6px; margin-left: auto;">
+        <i class="ri-menu-3-line text-white" style="font-size: 1.5rem;"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav m-auto gap-5">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html"> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="shop.html">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="media.html">Media</a>
+          </li> -->
+        </ul>
+        <a href="contact.html" class="btn btn-light text-uppercase btn-lg">Reach Us</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="hero-carousel">
     <!-- Full-screen carousel -->
     <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
       <div class="carousel-indicators">

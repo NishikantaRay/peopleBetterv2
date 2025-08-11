@@ -5,6 +5,7 @@
 }
 /* Ensure fixed navbar stays above all content */
 .navbar.position-fixed {
+  position: fixed;
   z-index: 1050;
 }
 /* Navbar scroll effect: black background when scrolled */
