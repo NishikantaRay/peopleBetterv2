@@ -51,7 +51,8 @@
   <link rel="stylesheet" href="css/navbar-scroll.css" />
   <!-- Common Css -->
   <link rel="stylesheet" href="css/common.css" />
-  
+  <link rel="stylesheet" href="css/page-fonts.css" />
+  <script src="js/navbar-scroll.js"></script>
 </head>
 
 <body>
@@ -62,17 +63,8 @@
       <span>Loading...</span>
     </div>
   </div>
-  <script>
-    // Navbar scroll effect: add 'scrolled' class when page is scrolled
-    window.addEventListener('scroll', function() {
-      var navbar = document.querySelector('.navbar');
-      if (window.scrollY > 10) {
-        navbar.classList.add('scrolled');
-      } else {
-        navbar.classList.remove('scrolled');
-      }
-    });
-  </script>
+  <!-- Moved navbar scroll effect to external JS file: js/navbar-scroll.js -->
+  <link rel="stylesheet" href="css/navbar-scroll.css" />
   <div class="hero-carousel">
     <!-- Navbar -->
     <nav

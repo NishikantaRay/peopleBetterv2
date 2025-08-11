@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <link rel="stylesheet" href="css/navbar-scroll.css" />
+    <link rel="stylesheet" href="css/navbar-scroll.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -50,98 +50,20 @@
     <!-- Common Css -->
     <link rel="stylesheet" href="css/common.css" />
 
-    <!-- Montserrat Font Override -->
-    <style>
-        body,
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6,
-        p,
-        a,
-        span,
-        div,
-        button,
-        input,
-        textarea,
-        select {
-            font-family: 'Montserrat', sans-serif !important;
-        }
-
-        p.lead.text-muted {
-            font-weight: 500 !important;
-            text-align: left !important;
-            /* Changed from justify to left */
-        }
-
-        p.lead.text-center {
-            text-align: center !important;
-        }
-
-        h1.text-center {
-            text-align: center !important;
-        }
-
-        p,
-        .lead,
-        .text-muted,
-        .text-white-50 {
-            text-align: left !important;
-            /* Changed from justify to left */
-        }
-
-        p,
-        .lead,
-        .text-muted,
-        .text-white-50 {
-            text-align: justify !important;
-        }
-
-        .fw-light {
-            font-weight: 300 !important;
-        }
-
-        .fw-normal {
-            font-weight: 400 !important;
-        }
-
-        .fw-medium {
-            font-weight: 500 !important;
-        }
-
-        .fw-semibold {
-            font-weight: 600 !important;
-        }
-
-        .fw-bold {
-            font-weight: 700 !important;
-        }
-
-        .fw-bolder {
-            font-weight: 800 !important;
-        }
-
-        body {
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-            text-rendering: optimizeLegibility;
-        }
-    </style>
+    <link rel="stylesheet" href="css/page-fonts.css" />
 </head>
 
 <body>
-  <script>
-    window.addEventListener('scroll', function() {
-      var navbar = document.querySelector('.navbar');
-      if (window.scrollY > 10) {
-        navbar.classList.add('scrolled');
-      } else {
-        navbar.classList.remove('scrolled');
-      }
-    });
-  </script>
+    <script>
+        window.addEventListener('scroll', function () {
+            var navbar = document.querySelector('.navbar');
+            if (window.scrollY > 10) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
     <!-- Page loading spinner -->
     <div class="page-loading active">
         <div class="page-loading-inner">
@@ -156,7 +78,7 @@
             <div class="container border-light py-2 py-lg-0">
                 <div class="position-relative d-flex align-items-center gap-2 site-brand">
                     <div class="lh-1">
-<h5 class="fw-bold m-0 text-white">PeopleBetter</h5>
+                        <h5 class="fw-bold m-0 text-white">PeopleBetter</h5>
                     </div>
                     <a class="stretched-link" href="index.html"></a>
                 </div>

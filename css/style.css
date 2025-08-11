@@ -1,3 +1,7 @@
+/* Make all <p> tags slightly smaller for better readability */
+p {
+  font-size: 0.42rem;
+}
 /*
 Template Name: Businzz | Multipurpose Business Website Template
 Author: Pillarix
