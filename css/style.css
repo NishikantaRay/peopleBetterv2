@@ -101,7 +101,7 @@ a:hover {
 }
 .build-something-together {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/build-something-together.jpg);
-	background-position: bottom;
+	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	/* margin-bottom: -10rem; */
@@ -109,7 +109,7 @@ a:hover {
 
 /* Page-specific background images for build-something-together */
 body.home-page .build-something-together {
-	background-position: bottom;
+	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/f1.png);
@@ -117,35 +117,35 @@ body.home-page .build-something-together {
 
 body.about-page .build-something-together {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/f2.png);
-	background-position: bottom;
+	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
 body.services-page .build-something-together {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/f3.png);
-	background-position: bottom;
+	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
 body.contact-page .build-something-together {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/contact-cta.jpg);
-	background-position: bottom;
+	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
 body.shop-page .build-something-together {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/shop-cta.jpg);
-	background-position: bottom;
+	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
 body.media-page .build-something-together {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/media-cta.jpg);
-	background-position: bottom;
+	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
