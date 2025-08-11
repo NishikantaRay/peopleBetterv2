@@ -111,6 +111,91 @@
       -moz-osx-font-smoothing: grayscale;
       text-rendering: optimizeLegibility;
     }
+
+    /* Full-screen carousel styles */
+    .hero-carousel {
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .carousel-item {
+      height: 100vh;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: relative;
+    }
+
+    .carousel-item::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+
+    .carousel-item .container {
+      position: relative;
+      z-index: 2;
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
+
+    /* Individual slide backgrounds */
+    .slide-general {
+      background-image: url('images/HOME.png');
+    }
+
+    .slide-corporate {
+      background-image: url('images/CORPORATE.png');
+    }
+
+    .slide-education {
+      background-image: url('images/UNIVERSITY.png');
+    }
+
+    .slide-schools {
+      background-image: url('images/SCHOOL.png');
+    }
+
+    /* Custom carousel controls */
+    .carousel-control-prev,
+    .carousel-control-next {
+      width: 5%;
+      opacity: 0.8;
+    }
+
+    .carousel-control-prev:hover,
+    .carousel-control-next:hover {
+      opacity: 1;
+    }
+
+    /* Custom carousel indicators */
+    .carousel-indicators {
+      bottom: 20px;
+    }
+
+    .carousel-indicators [data-bs-target] {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      margin: 0 5px;
+    }
+
+    /* Smooth scrolling behavior */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Navigation positioning */
+    .navbar {
+      position: relative;
+      z-index: 1000;
+    }
   </style>
 </head>
 
@@ -122,10 +207,10 @@
       <span>Loading...</span>
     </div>
   </div>
-  <div class="bg-homepage vh-100 d-flex align-items-center flex-column">
+  <div class="hero-carousel">
     <!-- Navbar -->
     <nav
-      class="navbar osahan-main-nav navbar-expand-lg business-nav w-100 p-0 border-bottom border-white border-opacity-25">
+      class="navbar osahan-main-nav navbar-expand-lg business-nav w-100 p-0 border-bottom border-white border-opacity-25 position-fixed">
       <div class="container border-light py-2 py-lg-0">
         <div class="position-relative d-flex align-items-center gap-2 site-brand">
           <div class="lh-1">
@@ -160,28 +245,141 @@
         </div>
       </div>
     </nav>
-    <!-- header -->
-    <div class=" m-auto">
-      <div class="container homepage">
-        <div class="row">
-          <div class="col-xl-6">
-            <div class="text-white" data-aos="fade-right" data-aos-duration="1000">
-              <p class="fw-bold text-uppercase" style="color: aliceblue;">Hey Peoples,</p>
-              <h1 class="fw-bold display-4">
-                Stay Eager Be Better
-              </h1>
-              <p class="lead" style="color: aliceblue;">
-                We provide a range of services to help businesses manage,
-                automate and streamline HR processes. You name it, we have it.
-              </p>
-              <div class="d-flex align-items-center gap-3 mt-5">
-                <a href="about.html" class="btn btn-light btn-lg">Learn More</a>
-                <a href="services.html" class="btn btn-outline-light btn-lg">See our services</a>
+    
+    <!-- Full-screen carousel -->
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="8000">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+      
+      <div class="carousel-inner">
+        <!-- Slide 1: General -->
+        <div class="carousel-item active slide-general">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-xl-8 col-lg-10">
+                <div class="text-white " data-aos="fade-up" data-aos-duration="1000">
+                  <p class="fw-bold text-uppercase mb-3" style="color: aliceblue;">Hey Peoples,</p>
+                  <h1 class="fw-bold display-3 mb-4">
+                    Stay Eager Be Better
+                  </h1>
+                  <p class="lead mb-5" style="color: aliceblue; font-size: 1.25rem;">
+                    We provide a range of services to help businesses manage,
+                    automate and streamline HR processes. You name it, we have it.
+                  </p>
+                  <div class="d-flex  align-items-center gap-3 mt-5">
+                    <a href="about.html" class="btn btn-light btn-lg px-4 py-3">Learn More</a>
+                    <a href="services.html" class="btn btn-outline-light btn-lg px-4 py-3">See our services</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Slide 2: Corporate -->
+        <div class="carousel-item slide-corporate">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-xl-8 col-lg-10">
+                <div class="text-white " data-aos="fade-up" data-aos-duration="1000">
+                  <p class="fw-bold text-uppercase mb-3" style="color: aliceblue;">For Corporate</p>
+                  <h1 class="fw-bold display-3 mb-4">
+                    Building Aligned Business Vision
+                  </h1>
+                  <div class="lead mb-5" style="color: aliceblue; font-size: 1.2rem;">
+                    <div class="row g-3">
+                      <div class="col-12">
+                        <p class="mb-2">• Help building business in alignment with vision through diversity & inclusion</p>
+                      </div>
+                      <div class="col-12">
+                        <p class="mb-2">• Help creating a culture of continuous learning and innovation</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex  align-items-center gap-3 mt-5">
+                    <a href="services.html" class="btn btn-light btn-lg px-4 py-3">Corporate Services</a>
+                    <a href="contact.html" class="btn btn-outline-light btn-lg px-4 py-3">Get Started</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Slide 3: College/University -->
+        <div class="carousel-item slide-education">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-xl-8 col-lg-10">
+                <div class="text-white" data-aos="fade-up" data-aos-duration="1000">
+                  <p class="fw-bold text-uppercase mb-3" style="color: aliceblue;">For Colleges & Universities</p>
+                  <h1 class="fw-bold display-3 mb-4">
+                    Purpose Before Pursuit
+                  </h1>
+                  <div class="lead mb-5" style="color: aliceblue; font-size: 1.2rem;">
+                    <div class="row g-3">
+                      <div class="col-12">
+                        <p class="mb-2">• Help institutions and students to create purpose before pursue</p>
+                      </div>
+                      <div class="col-12">
+                        <p class="mb-2">• Learn and acquire skills of practical and future relevance</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex  align-items-center gap-3 mt-5">
+                    <a href="services.html" class="btn btn-light btn-lg px-4 py-3">Education Services</a>
+                    <a href="contact.html" class="btn btn-outline-light btn-lg px-4 py-3">Partner With Us</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Slide 4: Schools -->
+        <div class="carousel-item slide-schools">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-xl-8 col-lg-10">
+                <div class="text-white " data-aos="fade-up" data-aos-duration="1000">
+                  <p class="fw-bold text-uppercase mb-3" style="color: aliceblue;">For Schools</p>
+                  <h1 class="fw-bold display-3 mb-4">
+                    Values & Future Skills
+                  </h1>
+                  <div class="lead mb-5" style="color: aliceblue; font-size: 1.2rem;">
+                    <div class="row g-3">
+                      <div class="col-12">
+                        <p class="mb-2">• Build and instill moral and ethical values in students</p>
+                      </div>
+                      <div class="col-12">
+                        <p class="mb-2">• Help students understand skills of present & future relevance</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex  align-items-center gap-3 mt-5">
+                    <a href="services.html" class="btn btn-light btn-lg px-4 py-3">School Programs</a>
+                    <a href="contact.html" class="btn btn-outline-light btn-lg px-4 py-3">Connect Today</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      
+      <!-- Carousel controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
   </div>
 
