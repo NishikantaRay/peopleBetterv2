@@ -1,3 +1,9 @@
+p {
+  font-family: "Graphik", Helvetica, sans-serif, "Lucida Sans Unicode" !important;
+  font-size: 0.8rem !important;
+  line-height: 1.44 !important;
+
+}
 body,
 h1,
 h2,
@@ -13,7 +19,7 @@ button,
 input,
 textarea,
 select {
-  font-family: 'Montserrat', sans-serif !important;
+  font-family: "Graphik", Helvetica, sans-serif, "Lucida Sans Unicode" !important;
 }
 
 p.lead.text-muted {
