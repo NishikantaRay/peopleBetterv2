@@ -1,0 +1,27 @@
+/* Ensure fixed navbar stays above all content */
+.navbar.position-fixed {
+  z-index: 1050;
+}
+/* Navbar scroll effect: black background when scrolled */
+.navbar.scrolled {
+  background: #111 !important;
+  transition: background 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* Optional: make text and icons more visible on black */
+.navbar.scrolled .nav-link,
+.navbar.scrolled .site-brand h5,
+.navbar.scrolled .btn {
+  color: #fff !important;
+}
+
+.navbar.scrolled .btn.btn-light {
+  background: #fff;
+  color: #111 !important;
+}
+
+.navbar.scrolled .btn.btn-outline-light {
+  border-color: #fff;
+  color: #fff !important;
+}

@@ -1,0 +1,161 @@
+/* Zoom-up animation for carousel images */
+@keyframes zoomUpBg {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.08);
+  }
+}
+
+.carousel-item.active,
+.carousel-item-next.carousel-item-left,
+.carousel-item-prev.carousel-item-right {
+  animation: zoomUpBg 2.5s linear forwards;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span,
+div,
+button,
+input,
+textarea,
+select {
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+p.lead.text-muted {
+  font-weight: 500 !important;
+  font-size: 1.15rem !important;
+  text-align: justify !important;
+}
+p.lead.text-center {
+  text-align: center !important;
+}
+h1.text-center {
+  text-align: center !important;
+}
+p,
+.lead,
+.text-muted,
+.text-white-50 {
+  text-align: justify !important;
+  font-size: 1.08rem !important;
+}
+
+.fw-light {
+  font-weight: 300 !important;
+}
+.fw-normal {
+  font-weight: 400 !important;
+}
+.fw-medium {
+  font-weight: 500 !important;
+}
+.fw-semibold {
+  font-weight: 600 !important;
+}
+.fw-bold {
+  font-weight: 700 !important;
+}
+.fw-bolder {
+  font-weight: 800 !important;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Full-screen carousel styles */
+.hero-carousel {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.carousel-item {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.carousel-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+ 
+  z-index: 1;
+}
+
+.carousel-item .container {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+/* Individual slide backgrounds */
+.slide-general {
+  background-image: url('../images/HOME.png');
+}
+
+.slide-corporate {
+  background-image: url('../images/CORPORATE.png');
+}
+
+.slide-education {
+  background-image: url('../images/UNIVERSITY.png');
+}
+
+.slide-schools {
+  background-image: url('../images/SCHOOL.png');
+}
+
+/* Custom carousel controls */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+  opacity: 0.8;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  opacity: 1;
+}
+
+/* Custom carousel indicators */
+.carousel-indicators {
+  bottom: 20px;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+/* Smooth scrolling behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Navigation positioning */
+.navbar {
+  position: relative;
+  z-index: 1000;
+}

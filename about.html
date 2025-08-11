@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+  <link rel="stylesheet" href="css/navbar-scroll.css" />
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -128,6 +129,16 @@
 </head>
 
 <body>
+  <script>
+    window.addEventListener('scroll', function() {
+      var navbar = document.querySelector('.navbar');
+      if (window.scrollY > 10) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+  </script>
   <!-- Page loading spinner -->
   <div class="page-loading active">
     <div class="page-loading-inner">
@@ -138,11 +149,11 @@
   <div class="bg-about">
     <!-- Navbar -->
     <nav
-      class="navbar osahan-main-nav navbar-expand-lg business-nav w-100 p-0 border-bottom border-white border-opacity-25">
+      class="navbar osahan-main-nav navbar-expand-lg business-nav w-100 p-0 border-bottom border-white border-opacity-25 position-fixed">
       <div class="container border-light py-2 py-lg-0">
         <div class="position-relative d-flex align-items-center gap-2 site-brand">
           <div class="lh-1">
-            <h5 class="fw-bold m-0 text-white">People Better</h5>
+<h5 class="fw-bold m-0 text-white">PeopleBetter</h5>
           </div>
           <a class="stretched-link" href="index.html"></a>
         </div>
