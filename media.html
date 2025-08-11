@@ -40,73 +40,73 @@
   <link rel="stylesheet" href="vender/aos/dist/aos.css" />
   <!-- Remix Icons -->
   <link rel="stylesheet" href="vender/remixicon/remixicon.css" />
-    <style>
+  <style>
     @media (max-width: 991.98px) {
-  body {
-    overflow-x: hidden !important;
-  }
-  
-  .navbar {
-    left: 0 !important;
-    right: 0 !important;
-    width: 100% !important;
-    max-width: 100vw !important;
-  }
-  
-  .navbar .container-fluid {
-    max-width: 100% !important;
-    padding-left: 15px !important;
-    padding-right: 15px !important;
-    margin: 0 !important;
-  }
-  
-  .navbar-toggler {
-    position: relative !important;
-    z-index: 1060 !important;
-    display: block !important;
-    flex-shrink: 0 !important;
-    margin-left: auto !important;
-    padding: 8px 12px !important;
-    
-    border-radius: 6px !important;
-    
-    min-width: 44px !important;
-    min-height: 44px !important;
-  }
-  
- 
-  
-  .navbar-toggler .ri-menu-3-line {
-    color: #fff !important;
-    font-size: 1.5rem !important;
-    line-height: 1 !important;
-  }
-  
-  .site-brand {
-    flex: 1 !important;
-    max-width: calc(100% - 60px) !important;
-  }
-  
-  /* Sidebar offcanvas z-index fix */
-  .offcanvas {
-    z-index: 1070 !important;
-  }
-  
-  .offcanvas-backdrop {
-    z-index: 1069 !important;
-  }
-}
+      body {
+        overflow-x: hidden !important;
+      }
+
+      .navbar {
+        left: 0 !important;
+        right: 0 !important;
+        width: 100% !important;
+        max-width: 100vw !important;
+      }
+
+      .navbar .container-fluid {
+        max-width: 100% !important;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+        margin: 0 !important;
+      }
+
+      .navbar-toggler {
+        position: relative !important;
+        z-index: 1060 !important;
+        display: block !important;
+        flex-shrink: 0 !important;
+        margin-left: auto !important;
+        padding: 8px 12px !important;
+
+        border-radius: 6px !important;
+
+        min-width: 44px !important;
+        min-height: 44px !important;
+      }
+
+
+
+      .navbar-toggler .ri-menu-3-line {
+        color: #fff !important;
+        font-size: 1.5rem !important;
+        line-height: 1 !important;
+      }
+
+      .site-brand {
+        flex: 1 !important;
+        max-width: calc(100% - 60px) !important;
+      }
+
+      /* Sidebar offcanvas z-index fix */
+      .offcanvas {
+        z-index: 1070 !important;
+      }
+
+      .offcanvas-backdrop {
+        z-index: 1069 !important;
+      }
+    }
   </style>
   <!-- Custom Css -->
   <link rel="stylesheet" href="css/style.css" />
   <!-- Common Css -->
   <link rel="stylesheet" href="css/common.css" />
-   <link rel="stylesheet" href="css/page-fonts.css" />
+  <link rel="stylesheet" href="css/page-fonts.css" />
 </head>
 
-<body>
+<body class="media-page">
   <script>
-    window.addEventListener('scroll', function() {
+    window.addEventListener('scroll', function () {
       var navbar = document.querySelector('.navbar');
       if (window.scrollY > 10) {
         navbar.classList.add('scrolled');
@@ -129,7 +129,7 @@
       <div class="container border-light py-2 py-lg-0">
         <div class="position-relative d-flex align-items-center gap-2 site-brand">
           <div class="lh-1">
-<h5 class="fw-bold m-0 text-white">PeopleBetter</h5>
+            <h5 class="fw-bold m-0 text-white">PeopleBetter</h5>
           </div>
           <a class="stretched-link" href="index.html"></a>
         </div>
@@ -175,7 +175,7 @@
               </p>
             </div>
           </div>
-         
+
         </div>
       </div>
     </div>
@@ -480,7 +480,7 @@
   <div class="offcanvas offcanvas-end" tabindex="-1" id="sidebar">
     <div class="offcanvas-header d-flex align-items-center justify-content-between">
       <div class="position-relative d-flex align-items-center gap-2 site-brand">
-       
+
         <div class="lh-1">
           <h5 class="fw-bold m-0">PeopleBetter</h5>
           <!-- <small class="text-muted">Template</small> -->
