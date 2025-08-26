@@ -1,810 +1,1049 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/navbar-scroll.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Unlocking Potential, Improving Performance, and Automating HR Processes for a Better Future" />
+    <meta
+      name="keywords"
+      content="workforce empowerment, employee development, business growth, performance improvement, HR automation, efficiency enhancement" />
+    <meta name="Dr. Sanjay Pattnaik" content="PeopleBetter" />
+    <meta name="author" content="Dr. Sanjay Pattnaik" />
+    <meta
+      property="og:image"
+      content="https://media.licdn.com/dms/image/D4E16AQELcpbMhb6FhA/profile-displaybackgroundimage-shrink_350_1400/0/1667499550810?e=1689811200&v=beta&t=xqoWwSwpQ55WtxnH9ibJ9b7zfOhm3C8-_6Nfwik4fRQ" />
+    <!-- URL of your website's main image -->
+    <meta property="og:url" content="https://peoplebetter.in/" />
+    <meta name="cf-2fa-verify" content="bd9c7f8bbb29fed" />
+    <meta
+      name="description"
+      content="Reduce errors, save time, and improve compliance with our automated transaction management tools. Focus on strategic initiatives while our streamlined tools handle transactions efficiently." />
 
-<head>
-  <link rel="stylesheet" href="css/navbar-scroll.css" />
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description"
-    content="Unlocking Potential, Improving Performance, and Automating HR Processes for a Better Future" />
-  <meta name="keywords"
-    content="workforce empowerment, employee development, business growth, performance improvement, HR automation, efficiency enhancement" />
-  <meta name="Dr. Sanjay Pattnaik" content="PeopleBetter" />
-  <meta name="author" content="Dr. Sanjay Pattnaik" />
-  <meta property="og:image"
-    content="https://media.licdn.com/dms/image/D4E16AQELcpbMhb6FhA/profile-displaybackgroundimage-shrink_350_1400/0/1667499550810?e=1689811200&v=beta&t=xqoWwSwpQ55WtxnH9ibJ9b7zfOhm3C8-_6Nfwik4fRQ" />
-  <!-- URL of your website's main image -->
-  <meta property="og:url" content="https://peoplebetter.in/" />
-  <meta name="cf-2fa-verify" content="bd9c7f8bbb29fed" />
-  <meta name="description"
-    content="Reduce errors, save time, and improve compliance with our automated transaction management tools. Focus on strategic initiatives while our streamlined tools handle transactions efficiently." />
+    <meta
+      name="description"
+      content="Access pre-designed HR documents customized to your business timeline by our experienced experts. Benefit from decades of experience in providing high-quality documentation solutions." />
 
-  <meta name="description"
-    content="Access pre-designed HR documents customized to your business timeline by our experienced experts. Benefit from decades of experience in providing high-quality documentation solutions." />
+    <meta
+      name="description"
+      content="Utilize our technology-driven approach for efficient talent acquisition and staffing. Find individuals who seamlessly fit into your organization and enhance your workforce." />
 
-  <meta name="description"
-    content="Utilize our technology-driven approach for efficient talent acquisition and staffing. Find individuals who seamlessly fit into your organization and enhance your workforce." />
+    <meta
+      name="description"
+      content="Drive strategic transformation through employee development and engagement. Enhance adaptability and keep up with the changing world through our strategic initiatives." />
+    <title>
+      PeopleBetter | Empowering Your Workforce and Elevating Your Business
+    </title>
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <style>
+      @media (max-width: 991.98px) {
+        body {
+          overflow-x: hidden !important;
+        }
 
-  <meta name="description"
-    content="Drive strategic transformation through employee development and engagement. Enhance adaptability and keep up with the changing world through our strategic initiatives." />
-  <title>
-    PeopleBetter | Empowering Your Workforce and Elevating Your Business
-  </title>
-  <link rel="icon" type="image/png" href="images/favicon.png" />
-  <style>
-    @media (max-width: 991.98px) {
-      body {
-        overflow-x: hidden !important;
+        .navbar {
+          left: 0 !important;
+          right: 0 !important;
+          width: 100% !important;
+          max-width: 100vw !important;
+        }
+
+        .navbar .container-fluid {
+          max-width: 100% !important;
+          padding-left: 15px !important;
+          padding-right: 15px !important;
+          margin: 0 !important;
+        }
+
+        .navbar-toggler {
+          position: relative !important;
+          z-index: 1060 !important;
+          display: block !important;
+          flex-shrink: 0 !important;
+          margin-left: auto !important;
+          padding: 8px 12px !important;
+
+          border-radius: 6px !important;
+
+          min-width: 44px !important;
+          min-height: 44px !important;
+        }
+
+        .navbar-toggler .ri-menu-3-line {
+          color: #fff !important;
+          font-size: 1.5rem !important;
+          line-height: 1 !important;
+        }
+
+        .site-brand {
+          flex: 1 !important;
+          max-width: calc(100% - 60px) !important;
+        }
+
+        /* Sidebar offcanvas z-index fix */
+        .offcanvas {
+          z-index: 1070 !important;
+        }
+
+        .offcanvas-backdrop {
+          z-index: 1069 !important;
+        }
       }
+    </style>
+    <link rel="icon" type="image/png" href="images/favicon.png" />
 
-      .navbar {
-        left: 0 !important;
-        right: 0 !important;
-        width: 100% !important;
-        max-width: 100vw !important;
-      }
+    <link rel="stylesheet" href="vender/bootstrap/css/bootstrap.min.css" />
+    <!-- Icofont Css -->
+    <link rel="stylesheet" href="vender/icofont/icofont.min.css" />
+    <!-- AOS Css -->
+    <link rel="stylesheet" href="vender/aos/dist/aos.css" />
+    <!-- Remix Icons -->
+    <link rel="stylesheet" href="vender/remixicon/remixicon.css" />
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Hero Carousel Custom Css -->
+    <link rel="stylesheet" href="css/hero-carousel.css" />
+    <!-- Navbar Scroll Effect Css -->
+    <link rel="stylesheet" href="css/navbar-scroll.css" />
+    <!-- Common Css -->
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/page-fonts.css" />
+    <script src="js/navbar-scroll.js"></script>
+  </head>
 
-      .navbar .container-fluid {
-        max-width: 100% !important;
-        padding-left: 15px !important;
-        padding-right: 15px !important;
-        margin: 0 !important;
-      }
-
-      .navbar-toggler {
-        position: relative !important;
-        z-index: 1060 !important;
-        display: block !important;
-        flex-shrink: 0 !important;
-        margin-left: auto !important;
-        padding: 8px 12px !important;
-
-        border-radius: 6px !important;
-
-        min-width: 44px !important;
-        min-height: 44px !important;
-      }
-
-
-
-      .navbar-toggler .ri-menu-3-line {
-        color: #fff !important;
-        font-size: 1.5rem !important;
-        line-height: 1 !important;
-      }
-
-      .site-brand {
-        flex: 1 !important;
-        max-width: calc(100% - 60px) !important;
-      }
-
-      /* Sidebar offcanvas z-index fix */
-      .offcanvas {
-        z-index: 1070 !important;
-      }
-
-      .offcanvas-backdrop {
-        z-index: 1069 !important;
-      }
-    }
-  </style>
-  <!-- Bootstrap Css -->
-  <link rel="stylesheet" href="vender/bootstrap/css/bootstrap.min.css" />
-  <!-- Icofont Css -->
-  <link rel="stylesheet" href="vender/icofont/icofont.min.css" />
-  <!-- AOS Css -->
-  <link rel="stylesheet" href="vender/aos/dist/aos.css" />
-  <!-- Remix Icons -->
-  <link rel="stylesheet" href="vender/remixicon/remixicon.css" />
-  <!-- Custom Css -->
-  <link rel="stylesheet" href="css/style.css" />
-  <!-- Common Css -->
-  <link rel="stylesheet" href="css/common.css" />
-  <!-- Montserrat Font Override -->
-  <link rel="stylesheet" href="css/page-fonts.css" />
-</head>
-
-<body class="services-page">
-  <script>
-    window.addEventListener('scroll', function () {
-      var navbar = document.querySelector('.navbar');
-      if (window.scrollY > 10) {
-        navbar.classList.add('scrolled');
-      } else {
-        navbar.classList.remove('scrolled');
-      }
-    });
-  </script>
-  <!-- Page loading spinner -->
-  <div class="page-loading active">
-    <div class="page-loading-inner">
-      <div class="page-spinner"></div>
-      <span>Loading...</span>
+  <body class="services-page">
+    <script>
+      window.addEventListener("scroll", function () {
+        var navbar = document.querySelector(".navbar");
+        if (window.scrollY > 10) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
+    </script>
+    <!-- Page loading spinner -->
+    <div class="page-loading active">
+      <div class="page-loading-inner">
+        <div class="page-spinner"></div>
+        <span>Loading...</span>
+      </div>
     </div>
-  </div>
-  <div class="bg-about">
-    <!-- Navbar -->
-    <nav
-      class="navbar osahan-main-nav navbar-expand-lg business-nav w-100 p-0 border-bottom border-white border-opacity-25 position-fixed">
-      <div class="container border-light py-2 py-lg-0">
-        <div class="position-relative d-flex align-items-center gap-2 site-brand">
+    <div class="bg-about">
+      <!-- Navbar -->
+      <nav
+        class="navbar osahan-main-nav navbar-expand-lg business-nav w-100 p-0 border-bottom border-white border-opacity-25 position-fixed">
+        <div class="container border-light py-2 py-lg-0">
+          <div
+            class="position-relative d-flex align-items-center gap-2 site-brand">
+            <div class="lh-1">
+              <h5 class="fw-bold m-0 text-white">PeopleBetter</h5>
+            </div>
+            <a class="stretched-link" href="index.html"></a>
+          </div>
+          <button
+            class="navbar-toggler border-0 shadow-none"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#sidebar"
+            aria-controls="sidebar">
+            <i class="ri-menu-3-line text-white ri-lg"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto gap-5">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html"> Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="services.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://myswipe.store/PeopleBetter"
+                  >Shop</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="media.html">Media</a>
+              </li>
+            </ul>
+            <a href="contact.html" class="btn btn-light text-uppercase btn-lg"
+              >Reach Us</a
+            >
+          </div>
+        </div>
+      </nav>
+      <!-- header -->
+      <div class="py-5">
+        <div class="container py-5">
+          <div class="row align-items-center g-4">
+            <div class="col-xl-6 col-lg-6 col-12">
+              <div
+                class="text-white"
+                data-aos="fade-right"
+                data-aos-duration="1000">
+                <h1 class="fw-bolder display-4 mb-2">Services</h1>
+                <p class="lead m-0">
+                  Empowering organizations and institutions to achieve their
+                  full potential through strategic partnerships and innovative
+                  solutions.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-light">
+      <div class="container py-5">
+        <div class="row align-items-center g-4 g-md-5">
+          <div class="col-lg-5 col-12">
+            <div class="mb-4">
+              <span
+                class="fw-light small px-3 py-2 rounded-pill bg-opacity-10 text-success text-uppercase mb-3 d-inline-block">
+                <i class="ri-service-line me-1"></i> Our Services
+              </span>
+              <h1 class="display-4 fw-bold mb-4">
+                Transforming Organizations & Empowering People
+              </h1>
+              <p class="lead text-muted">
+                Owners and entrepreneurs are dreamers. They firmly believe that,
+                where they are today, is the result of what they believed to be
+                possible and the hard work they put in. Failure is just to be
+                more agile and full proof while traversing through the learning
+                curve. They want to be ahead of time. They build teams that run
+                with them, look at every problem as an opportunity to experiment
+                and innovate and make it big. What they do not pay attention is
+                building an Organization imperative to take them to the level
+                where they dream to go.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-7 col-12">
+            <div class="row g-4">
+              <h4 style="font-weight: 700">
+                Following are the services peoplebetter offers -
+              </h4>
+              <p class="lead text-muted">
+                We provide our services primarily in two areas, a. commercial
+                organizations and b. academic institutions, while staying open
+                for other challenging problems that need our expertise to be
+                used for a sustainable solution. We work with, organizations,
+                employees, academic institutions and students to find way
+                forward on to their unsolved problems, improve their ability to
+                progress and partner in the areas leading towards their
+                respective goals.
+              </p>
+              <div class="col-md-6">
+                <div class="card h-100 border-0 shadow-sm">
+                  <div class="card-body p-4 text-center">
+                    <div class="mb-3">
+                      <i class="ri-building-line display-5 text-success"></i>
+                    </div>
+                    <h5 class="fw-bold mb-3">Organizations & Employees</h5>
+                    <p class="text-muted small mb-4">
+                      Strategic organizational design, culture transformation,
+                      and talent development for sustainable business growth.
+                    </p>
+                    <div class="d-flex flex-wrap gap-2 justify-content-center">
+                      <span class="badge bg-opacity-10 text-success px-2 py-1"
+                        >Strategy</span
+                      >
+                      <span class="badge bg-opacity-10 text-success px-2 py-1"
+                        >HR</span
+                      >
+                      <span class="badge bg-opacity-10 text-success px-2 py-1"
+                        >Talent</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="card h-100 border-0 shadow-sm">
+                  <div class="card-body p-4 text-center">
+                    <div class="mb-3">
+                      <i class="ri-school-line display-5 text-success"></i>
+                    </div>
+                    <h5 class="fw-bold mb-3">Academic Institutions</h5>
+                    <p class="text-muted small mb-4">
+                      Educational excellence, student development, and
+                      institutional branding for enhanced academic outcomes.
+                    </p>
+                    <div class="d-flex flex-wrap gap-2 justify-content-center">
+                      <span
+                        class="badge bg-success bg-opacity-10 text-success px-2 py-1"
+                        >Career</span
+                      >
+                      <span
+                        class="badge bg-success bg-opacity-10 text-success px-2 py-1"
+                        >Skills</span
+                      >
+                      <span
+                        class="badge bg-success bg-opacity-10 text-success px-2 py-1"
+                        >Innovation</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="py-5">
+      <div class="container py-5">
+        <div class="row align-items-center">
+          <div class="col-lg-6 col-12 mb-5 mb-lg-0">
+            <div class="position-relative">
+              <img
+                src="images/SERVICES 1.png"
+                alt="Organizations Services"
+                class="img-fluid rounded-3 shadow"
+                data-aos="fade-right"
+                data-aos-duration="1000" />
+              <div
+                class="position-absolute top-0 start-0 w-100 h-100 bg-opacity-10 rounded-3"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-12">
+            <div class="ps-lg-4">
+              <span
+                class="fw-light small px-3 py-2 rounded-pill bg-opacity-10 text-success text-uppercase mb-3 d-inline-block">
+                <i class="ri-building-line me-1"></i> Organisation & Employees
+              </span>
+              <h2 class="display-6 fw-bold mb-4">
+                Building Tomorrow's Organizations
+              </h2>
+              <p class="lead text-muted">
+                We offer a comprehensive suite of services for organizations and
+                employees, designed to build resilient, high-performing teams
+                and future-ready businesses. Our approach covers every aspect of
+                organizational growth, from defining mission and values to
+                talent acquisition and culture transformation.
+              </p>
+
+              <!-- Accordion for Organization Services -->
+              <div class="accordion accordion-flush" id="organizationAccordion">
+                <div
+                  class="accordion-item bg-transparent border-0 border-bottom">
+                  <h3 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed bg-transparent shadow-none fw-bold text-dark px-0 py-4"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#mvv"
+                      aria-expanded="false"
+                      aria-controls="mvv">
+                      <i class="ri-lightbulb-line me-3 text-success"></i>
+                      Mission, Vision and Values
+                    </button>
+                  </h3>
+                  <div
+                    id="mvv"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#organizationAccordion">
+                    <div class="accordion-body px-0 pb-4">
+                      <ul class="list-unstyled">
+                        <li>
+                          <i class="ri-check-line text-success me-2"></i
+                          >Developing Mission, Vision and Values (MVV) of the
+                          organization through discovery workshops
+                        </li>
+                        <li>
+                          <i class="ri-check-line text-success me-2"></i
+                          >Converting MVV into the culture of the organization
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="accordion-item bg-transparent border-0 border-bottom">
+                  <h3 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed bg-transparent shadow-none fw-bold text-dark px-0 py-4"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#org-design"
+                      aria-expanded="false"
+                      aria-controls="org-design">
+                      <i class="ri-building-line me-3 text-success"></i>
+                      Organization Design and Functionalities
+                    </button>
+                  </h3>
+                  <div
+                    id="org-design"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#organizationAccordion">
+                    <div class="accordion-body px-0 pb-4">
+                      <ul class="list-unstyled">
+                        <li>
+                          <i class="ri-check-line text-success me-2"></i
+                          >Organization structuring & re-structuring
+                        </li>
+                        <li>
+                          <i class="ri-check-line text-success me-2"></i
+                          >Organizational change and transformation
+                        </li>
+                        <li>
+                          <i class="ri-check-line text-success me-2"></i
+                          >Development of competency framework in alignment with
+                          value system
+                        </li>
+                        <li>
+                          <i class="ri-check-line text-success me-2"></i
+                          >Operational model and span of control
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="accordion-item bg-transparent border-0 border-bottom">
+                  <h3 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed bg-transparent shadow-none fw-bold text-dark px-0 py-4"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#hr-strategy"
+                      aria-expanded="false"
+                      aria-controls="hr-strategy">
+                      <i class="ri-briefcase-4-line me-3 text-success"></i>
+                      HR Strategy & Organization Enrichment
+                    </button>
+                  </h3>
+                  <div
+                    id="hr-strategy"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#organizationAccordion">
+                    <div class="accordion-body px-0 pb-4">
+                      <ul class="list-unstyled">
+                        <li>
+                          <i class="ri-check-line text-success me-2"></i
+                          >Manpower planning
+                        </li>
+                        <li>
+                          <i class="ri-check-line text-success me-2"></i>Org
+                          transformation and alignment of functionalities
+                        </li>
+                        <li>
+                          <i class="ri-check-line text-success me-2"></i>Change
+                          management
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="accordion-item bg-transparent border-0 border-bottom">
+                  <h3 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed bg-transparent shadow-none fw-bold text-dark px-0 py-4"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#compensation"
+                      aria-expanded="false"
+                      aria-controls="compensation">
+                      <i class="ri-award-line me-3 text-success"></i>
+                      Compensation, Rewards and Recognitions
+                    </button>
+                  </h3>
+                  <div
+                    id="compensation"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#organizationAccordion">
+                    <div class="accordion-body px-0 pb-4">
+                      <ul class="list-unstyled">
+                        <li>
+                          <i class="ri-check-line text-success me-2"></i
+                          >Compensation strategy
+                        </li>
+                        <li>
+                          <i class="ri-check-line text-success me-2"></i
+                          >Development of schemes on rewards and recognitions
+                        </li>
+                        <li>
+                          <i class="ri-check-line text-success me-2"></i>Job
+                          evaluation and grading
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="accordion-item bg-transparent border-0 border-bottom">
+                  <h3 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed bg-transparent shadow-none fw-bold text-dark px-0 py-4"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#performance"
+                      aria-expanded="false"
+                      aria-controls="performance">
+                      <i class="ri-line-chart-line me-3 text-success"></i>
+                      Performance & Potential Management
+                    </button>
+                  </h3>
+                  <div
+                    id="performance"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#organizationAccordion">
+                    <div class="accordion-body px-0 pb-4">
+                      <ul class="list-unstyled">
+                        <li>
+                          <i class="ri-check-line text-success me-2"></i
+                          >Development of OKR’s and KRA’s
+                        </li>
+                        <li>
+                          <i class="ri-check-line text-success me-2"></i
+                          >Appraisal framework
+                        </li>
+                        <li>
+                          <i class="ri-check-line text-success me-2"></i
+                          >Periodical potential assessment and leadership
+                          development
+                        </li>
+                        <li>
+                          <i class="ri-check-line text-success me-2"></i>Skill
+                          gap assessment and future skill development
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="accordion-item bg-transparent border-0 border-bottom">
+                  <h3 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed bg-transparent shadow-none fw-bold text-dark px-0 py-4"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#learning"
+                      aria-expanded="false"
+                      aria-controls="learning">
+                      <i class="ri-book-open-line me-3 text-success"></i>
+                      Learning & Development
+                    </button>
+                  </h3>
+                  <div
+                    id="learning"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#organizationAccordion">
+                    <div class="accordion-body px-0 pb-4">
+                      <ul class="list-unstyled">
+                        <li>
+                          <i class="ri-check-line text-success me-2"></i
+                          >Training program design and delivery
+                        </li>
+                        <li>
+                          <i class="ri-check-line text-success me-2"></i
+                          >Coaching and mentoring
+                        </li>
+                        <li>
+                          <i class="ri-check-line text-success me-2"></i
+                          >Designing innovative interventions for continuous
+                          learning and reflection in the work
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="accordion-item bg-transparent border-0 border-bottom">
+                  <h3 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed bg-transparent shadow-none fw-bold text-dark px-0 py-4"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#culture"
+                      aria-expanded="false"
+                      aria-controls="culture">
+                      <i class="ri-group-line me-3 text-success"></i>
+                      Culture as an Enabler of Progress
+                    </button>
+                  </h3>
+                  <div
+                    id="culture"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#organizationAccordion">
+                    <div class="accordion-body px-0 pb-4">
+                      <ul class="list-unstyled">
+                        <li>
+                          <i class="ri-check-line text-success me-2"></i>Culture
+                          shift programs
+                        </li>
+                        <li>
+                          <i class="ri-check-line text-success me-2"></i
+                          >Stakeholder engagement strategy
+                        </li>
+                        <li>
+                          <i class="ri-check-line text-success me-2"></i
+                          >Organizational culture assessment
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item bg-transparent border-0">
+                  <h3 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed bg-transparent shadow-none fw-bold text-dark px-0 py-4"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#hiring"
+                      aria-expanded="false"
+                      aria-controls="hiring">
+                      <i class="ri-user-search-line me-3 text-success"></i>
+                      Hiring and Talent Acquisition
+                    </button>
+                  </h3>
+                  <div
+                    id="hiring"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#organizationAccordion">
+                    <div class="accordion-body px-0 pb-4">
+                      <ul class="list-unstyled">
+                        <li>
+                          <i class="ri-check-line text-success me-2"></i
+                          >Executive search and head hunting
+                        </li>
+                        <li>
+                          <i class="ri-check-line text-success me-2"></i
+                          >Recruitment structuring
+                        </li>
+                        <li>
+                          <i class="ri-check-line text-success me-2"></i>Campus
+                          hiring
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Academic Institutions & Students Services -->
+    <div class="py-5 bg-light">
+      <div class="container py-5">
+        <div class="row align-items-center">
+          <div class="col-lg-6 col-12 order-lg-2 mb-5 mb-lg-0">
+            <div class="position-relative">
+              <img
+                src="images/SERVICES 2.png"
+                alt="Academic Services"
+                class="img-fluid rounded-3 shadow"
+                data-aos="fade-left"
+                data-aos-duration="1000" />
+              <div
+                class="position-absolute top-0 start-0 w-100 h-100 bg-success bg-opacity-10 rounded-3"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-12 order-lg-1">
+            <div class="pe-lg-4">
+              <span
+                class="fw-light small px-3 py-2 rounded-pill bg-success bg-opacity-10 text-success text-uppercase mb-3 d-inline-block">
+                <i class="ri-school-line me-1"></i> For Academic Institutions
+              </span>
+              <h2 class="display-6 fw-bold mb-4">Shaping Brighter Futures</h2>
+              <p class="lead text-muted mb-5">
+                We partner with educational institutions to enhance quality,
+                build strong brands, and prepare students for successful,
+                fulfilling careers.
+              </p>
+
+              <!-- Service Cards -->
+              <div class="row g-4">
+                <div class="col-md-6">
+                  <div class="card border-0 bg-white shadow-sm h-100">
+                    <div class="card-body p-4">
+                      <div class="mb-3">
+                        <i class="ri-trophy-line display-6 text-success"></i>
+                      </div>
+                      <h5 class="fw-bold mb-3">Institutional Growth</h5>
+                      <p class="text-muted small mb-0">
+                        Academic excellence, teaching effectiveness, and
+                        enhanced national/international visibility.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="card border-0 bg-white shadow-sm h-100">
+                    <div class="card-body p-4">
+                      <div class="mb-3">
+                        <i class="ri-compass-line display-6 text-success"></i>
+                      </div>
+                      <h5 class="fw-bold mb-3">Career Discovery</h5>
+                      <p class="text-muted small mb-0">
+                        Personalized counseling and mentoring to help students
+                        identify strengths and explore paths.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="card border-0 bg-white shadow-sm h-100">
+                    <div class="card-body p-4">
+                      <div class="mb-3">
+                        <i
+                          class="ri-lightbulb-flash-line display-6 text-success"></i>
+                      </div>
+                      <h5 class="fw-bold mb-3">Entrepreneurship</h5>
+                      <p class="text-muted small mb-0">
+                        Innovation workshops and practical tools to help
+                        students turn ideas into impactful ventures.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="card border-0 bg-white shadow-sm h-100">
+                    <div class="card-body p-4">
+                      <div class="mb-3">
+                        <i class="ri-team-line display-6 text-success"></i>
+                      </div>
+                      <h5 class="fw-bold mb-3">Alumni Engagement</h5>
+                      <p class="text-muted small mb-0">
+                        Strong networks that enhance credibility and create
+                        continuous career opportunities.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <div
+                    class="card border-0"
+                    style="
+                      background: linear-gradient(
+                        135deg,
+                        #11998e 0%,
+                        #38ef7d 100%
+                      );
+                    ">
+                    <div class="card-body p-4 text-center text-white">
+                      <div class="mb-3">
+                        <i class="ri-tools-line display-6"></i>
+                      </div>
+                      <h5 class="fw-bold mb-3">Future-Ready Skill Building</h5>
+                      <p class="mb-0 opacity-90">
+                        Hands-on training in essential soft and professional
+                        skills, making students more confident, capable, and
+                        prepared for the modern workplace.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Why Choose PeopleBetter -->
+    <div class="py-5">
+      <div class="container py-5">
+        <div
+          class="row align-items-center justify-content-center text-center mb-5">
+          <div class="col-lg-8">
+            <span
+              class="fw-light small px-3 py-2 rounded-pill bg-dark bg-opacity-10 text-dark text-uppercase mb-3 d-inline-block">
+              <i class="ri-star-line me-1"></i> Why Choose Us
+            </span>
+            <h2 class="display-5 fw-bold mb-4">Partner with Confidence</h2>
+            <p class="lead text-muted" style="text-align: center">
+              Our proven track record and deep expertise ensure sustainable
+              growth and lasting transformation for your organization.
+            </p>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="text-center h-100">
+              <div class="mb-4">
+                <div
+                  class="bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center"
+                  style="width: 80px; height: 80px">
+                  <i class="ri-user-star-line display-6 text-success"></i>
+                </div>
+              </div>
+              <h5 class="fw-bold mb-3">Expert Leadership</h5>
+              <p class="text-muted text-center" style="text-align: center">
+                Decades of combined experience in organizational development, HR
+                strategy, and educational transformation.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="text-center h-100">
+              <div class="mb-4">
+                <div
+                  class="bg-success bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center"
+                  style="width: 80px; height: 80px">
+                  <i class="ri-rocket-line display-6 text-success"></i>
+                </div>
+              </div>
+              <h5 class="fw-bold mb-3">Proven Results</h5>
+              <p class="text-muted" style="text-align: center">
+                Track record of successful transformations across diverse
+                industries and academic institutions.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="text-center h-100">
+              <div class="mb-4">
+                <div
+                  class="bg-warning bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center"
+                  style="width: 80px; height: 80px">
+                  <i class="ri-team-line display-6 text-warning"></i>
+                </div>
+              </div>
+              <h5 class="fw-bold mb-3">Partnership Approach</h5>
+              <p class="text-muted" style="text-align: center">
+                Collaborative methodology that ensures knowledge transfer and
+                sustainable long-term success.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Our Team -->
+
+    <div class="pt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div
+              class="build-something-together shadow rounded-3 py-5"
+              data-aos="zoom-in"
+              data-aos-duration="1000">
+              <div class="text-center text-white py-5">
+                <div class="mb-5">
+                  <h1 class="fw-bold mb-3">Let’s Connect and Grow Together</h1>
+                  <p class="lead text-center px-lg-5">
+                    Start the conversation. We’re listening.
+                  </p>
+                </div>
+                <a href="contact.html" class="btn btn-outline-light btn-lg"
+                  >Reach Out now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+
+    <div class="footer bg-black py-5 mt-5">
+      <div class="container py-5 mt-5">
+        <div class="row gy-5 text-center text-lg-start">
+          <!-- Left Side -->
+          <div class="col-lg-6 col-12">
+            <div class="row gy-4">
+              <div class="col-md-6">
+                <div class="lh-1">
+                  <h5 class="fw-bold m-0 text-white">PeopleBetter</h5>
+                </div>
+                <p class="text-white-50 mt-3">
+                  Our solutions are designed to be customizable and scalable,
+                  catering to the unique needs of each client.
+                </p>
+                <div
+                  class="d-flex justify-content-center justify-content-md-start align-items-center gap-3 mt-3">
+                  <a href="#" class="link-secondary">
+                    <i class="ri-facebook-circle-fill ri-xl"></i>
+                  </a>
+                  <a href="#" class="link-secondary">
+                    <i class="ri-twitter-fill ri-xl"></i>
+                  </a>
+                  <a href="#" class="link-secondary">
+                    <i class="ri-instagram-fill ri-xl"></i>
+                  </a>
+                  <a href="#" class="link-secondary">
+                    <i class="ri-youtube-fill ri-xl"></i>
+                  </a>
+                  <a href="#" class="link-secondary">
+                    <i class="ri-linkedin-fill ri-xl"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <h6 class="fw-bold text-white">Useful Links</h6>
+                <ul class="list-unstyled d-grid gap-2 mt-3">
+                  <li><a href="about.html" class="link-secondary">About</a></li>
+                  <li>
+                    <a href="services.html" class="link-secondary">Services</a>
+                  </li>
+                  <li><a href="shop.html" class="link-secondary">Shop</a></li>
+                  <li>
+                    <a href="contact.html" class="link-secondary">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Side -->
+          <div class="col-lg-6 col-12">
+            <div class="row gy-4">
+              <div class="col-md-6 text-center text-md-start">
+                <h6 class="fw-bold text-white">Get In Touch</h6>
+                <p class="text-white-50 mt-3">
+                  <i class="ri-phone-line ri-xl me-2"></i> 9777451500
+                </p>
+                <p class="text-white-50">
+                  <i class="ri-mail-fill ri-lg" style="font-size: 1.3rem"></i>
+                  office@peoplebetter.in
+                </p>
+              </div>
+              <div class="col-md-6 text-center text-md-start">
+                <h6 class="fw-bold text-white">Our Location</h6>
+                <p class="text-white-50 mt-3">
+                  PeopleBetter,<br />
+                  Awfis Space Solutions Limited,<br />
+                  Second Floor, SRB Tower,<br />
+                  E-12, Infocity, Patia,<br />
+                  Bhubaneswar-751024, Odisha
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-dark">
+      <div class="container">
+        <div class="row justify-content-center py-4">
+          <div class="col-auto">
+            <p class="text-center m-0 text-white-50">
+              Copyright © 2025
+              <a href="#" class="text-white"
+                >|| PeopleBetter. All rights reserved</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Nav Sidebar -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="sidebar">
+      <div
+        class="offcanvas-header d-flex align-items-center justify-content-between">
+        <div
+          class="position-relative d-flex align-items-center gap-2 site-brand">
           <div class="lh-1">
-            <h5 class="fw-bold m-0 text-white">PeopleBetter</h5>
+            <h5 class="fw-bold m-0">PeopleBetter</h5>
+            <!-- <small class="text-muted">Template</small> -->
           </div>
           <a class="stretched-link" href="index.html"></a>
         </div>
-        <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="offcanvas"
-          data-bs-target="#sidebar" aria-controls="sidebar">
-          <i class="ri-menu-3-line text-white ri-lg"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav m-auto gap-5">
+        <a
+          href="#"
+          class="link-light"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+          ><i class="ri-close-line ri-lg"></i
+        ></a>
+      </div>
+      <div class="offcanvas-body">
+        <div class="sidebar-nav">
+          <ul class="navbar-nav mb-3">
             <li class="nav-item">
               <a class="nav-link active" href="index.html"> Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="about.html">About</a>
             </li>
-
             <li class="nav-item">
               <a class="nav-link" href="services.html">Services</a>
             </li>
+
             <!-- <li class="nav-item">
-              <a class="nav-link" href="shop.html">Shop</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="media.html">Media</a>
-            </li> -->
-          </ul>
-          <a href="contact.html" class="btn btn-light text-uppercase btn-lg">Reach Us</a>
-        </div>
-      </div>
-    </nav>
-    <!-- header -->
-    <div class="py-5">
-      <div class="container py-5 mt-5">
-        <div class="row align-items-center g-4">
-          <div class="col-xl-6 col-lg-6 col-12">
-            <div class="text-white" data-aos="fade-right" data-aos-duration="1000">
-              <h1 class="fw-bolder display-4 mb-2">Services</h1>
-              <p class="lead m-0">Empowering organizations and institutions to achieve their full
-                potential through strategic partnerships and innovative solutions.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="py-5 bg-light">
-    <div class="container py-5">
-      <div class="row align-items-center g-4 g-md-5">
-        <div class="col-lg-5 col-12">
-          <div class="mb-4">
-            <span
-              class="fw-light small px-3 py-2 rounded-pill  bg-opacity-10 text-success text-uppercase mb-3 d-inline-block">
-              <i class="ri-service-line me-1"></i> Our Services
-            </span>
-            <h1 class="display-4 fw-bold mb-4">Transforming Organizations & Empowering People</h1>
-            <p class="lead text-muted">
-              Owners and entrepreneurs are dreamers. They firmly believe that, where they are today, is the result of
-              what they believed to be possible and the hard work they put in. Failure is just to be more agile and full
-              proof while traversing through the learning curve. They want to be ahead of time. They build teams that
-              run with them, look at every problem as an opportunity to experiment and innovate and make it big. What
-              they do not pay attention is building an Organization imperative to take them to the level where they
-              dream to go.
-            </p>
-
-
-
-          </div>
-        </div>
-        <div class="col-lg-7 col-12">
-          <div class="row g-4  ">
-            <h4 style="font-weight: 700;">Following are the services peoplebetter offers -</h4>
-            <p class="lead text-muted">
-              We provide our services primarily in two areas, a. commercial organizations and b. academic institutions,
-              while staying open for other challenging problems that need our expertise to be used for a sustainable
-              solution. We work with, organizations, employees, academic institutions and students to find way forward
-              on to their unsolved problems, improve their ability to progress and partner in the areas leading towards
-              their respective goals.
-            </p>
-            <div class="col-md-6">
-              <div class="card h-100 border-0 shadow-sm">
-                <div class="card-body p-4 text-center">
-                  <div class="mb-3">
-                    <i class="ri-building-line display-5 text-success"></i>
-                  </div>
-                  <h5 class="fw-bold mb-3">Organizations & Employees</h5>
-                  <p class="text-muted small mb-4">
-                    Strategic organizational design, culture transformation, and talent development for sustainable
-                    business growth.
-                  </p>
-                  <div class="d-flex flex-wrap gap-2 justify-content-center">
-                    <span class="badge  bg-opacity-10 text-success px-2 py-1">Strategy</span>
-                    <span class="badge  bg-opacity-10 text-success px-2 py-1">HR</span>
-                    <span class="badge  bg-opacity-10 text-success px-2 py-1">Talent</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-6">
-              <div class="card h-100 border-0 shadow-sm">
-                <div class="card-body p-4 text-center">
-                  <div class="mb-3">
-                    <i class="ri-school-line display-5 text-success"></i>
-                  </div>
-                  <h5 class="fw-bold mb-3">Academic Institutions</h5>
-                  <p class="text-muted small mb-4">
-                    Educational excellence, student development, and institutional branding for enhanced academic
-                    outcomes.
-                  </p>
-                  <div class="d-flex flex-wrap gap-2 justify-content-center">
-                    <span class="badge bg-success bg-opacity-10 text-success px-2 py-1">Career</span>
-                    <span class="badge bg-success bg-opacity-10 text-success px-2 py-1">Skills</span>
-                    <span class="badge bg-success bg-opacity-10 text-success px-2 py-1">Innovation</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="py-5">
-    <div class="container py-5">
-      <div class="row align-items-center">
-        <div class="col-lg-6 col-12 mb-5 mb-lg-0">
-          <div class="position-relative">
-            <img src="images/SERVICES 1.png" alt="Organizations Services" class="img-fluid rounded-3 shadow"
-              data-aos="fade-right" data-aos-duration="1000" />
-            <div class="position-absolute top-0 start-0 w-100 h-100  bg-opacity-10 rounded-3"></div>
-          </div>
-        </div>
-
-        <div class="col-lg-6 col-12">
-          <div class="ps-lg-4">
-            <span
-              class="fw-light small px-3 py-2 rounded-pill  bg-opacity-10 text-success text-uppercase mb-3 d-inline-block">
-              <i class="ri-building-line me-1"></i> Organisation & Employees
-            </span>
-            <h2 class="display-6 fw-bold mb-4">Building Tomorrow's Organizations</h2>
-            <p class="lead text-muted">
-              We offer a comprehensive suite of services for organizations and employees, designed to build resilient,
-              high-performing teams and future-ready businesses. Our approach covers every aspect of organizational
-              growth, from defining mission and values to talent acquisition and culture transformation.
-            </p>
-
-            <!-- Accordion for Organization Services -->
-            <div class="accordion accordion-flush" id="organizationAccordion">
-              <div class="accordion-item bg-transparent border-0 border-bottom">
-                <h3 class="accordion-header">
-                  <button class="accordion-button collapsed bg-transparent shadow-none fw-bold text-dark px-0 py-4"
-                    type="button" data-bs-toggle="collapse" data-bs-target="#mvv" aria-expanded="false"
-                    aria-controls="mvv">
-                    <i class="ri-lightbulb-line me-3 text-success"></i>
-                    Mission, Vision and Values
-                  </button>
-                </h3>
-                <div id="mvv" class="accordion-collapse collapse" data-bs-parent="#organizationAccordion">
-                  <div class="accordion-body px-0 pb-4">
-                    <ul class="list-unstyled">
-                      <li><i class="ri-check-line text-success me-2"></i>Developing Mission, Vision and Values (MVV) of
-                        the organization through discovery workshops</li>
-                      <li><i class="ri-check-line text-success me-2"></i>Converting MVV into the culture of the
-                        organization</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <div class="accordion-item bg-transparent border-0 border-bottom">
-                <h3 class="accordion-header">
-                  <button class="accordion-button collapsed bg-transparent shadow-none fw-bold text-dark px-0 py-4"
-                    type="button" data-bs-toggle="collapse" data-bs-target="#org-design" aria-expanded="false"
-                    aria-controls="org-design">
-                    <i class="ri-building-line me-3 text-success"></i>
-                    Organization Design and Functionalities
-                  </button>
-                </h3>
-                <div id="org-design" class="accordion-collapse collapse" data-bs-parent="#organizationAccordion">
-                  <div class="accordion-body px-0 pb-4">
-                    <ul class="list-unstyled">
-                      <li><i class="ri-check-line text-success me-2"></i>Organization structuring & re-structuring</li>
-                      <li><i class="ri-check-line text-success me-2"></i>Organizational change and transformation</li>
-                      <li><i class="ri-check-line text-success me-2"></i>Development of competency framework in
-                        alignment with value system</li>
-                      <li><i class="ri-check-line text-success me-2"></i>Operational model and span of control</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <div class="accordion-item bg-transparent border-0 border-bottom">
-                <h3 class="accordion-header">
-                  <button class="accordion-button collapsed bg-transparent shadow-none fw-bold text-dark px-0 py-4"
-                    type="button" data-bs-toggle="collapse" data-bs-target="#hr-strategy" aria-expanded="false"
-                    aria-controls="hr-strategy">
-                    <i class="ri-briefcase-4-line me-3 text-success"></i>
-                    HR Strategy & Organization Enrichment
-                  </button>
-                </h3>
-                <div id="hr-strategy" class="accordion-collapse collapse" data-bs-parent="#organizationAccordion">
-                  <div class="accordion-body px-0 pb-4">
-                    <ul class="list-unstyled">
-                      <li><i class="ri-check-line text-success me-2"></i>Manpower planning</li>
-                      <li><i class="ri-check-line text-success me-2"></i>Org transformation and alignment of
-                        functionalities</li>
-                      <li><i class="ri-check-line text-success me-2"></i>Change management</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <div class="accordion-item bg-transparent border-0 border-bottom">
-                <h3 class="accordion-header">
-                  <button class="accordion-button collapsed bg-transparent shadow-none fw-bold text-dark px-0 py-4"
-                    type="button" data-bs-toggle="collapse" data-bs-target="#compensation" aria-expanded="false"
-                    aria-controls="compensation">
-                    <i class="ri-award-line me-3 text-success"></i>
-                    Compensation, Rewards and Recognitions
-                  </button>
-                </h3>
-                <div id="compensation" class="accordion-collapse collapse" data-bs-parent="#organizationAccordion">
-                  <div class="accordion-body px-0 pb-4">
-                    <ul class="list-unstyled">
-                      <li><i class="ri-check-line text-success me-2"></i>Compensation strategy</li>
-                      <li><i class="ri-check-line text-success me-2"></i>Development of schemes on rewards and
-                        recognitions</li>
-                      <li><i class="ri-check-line text-success me-2"></i>Job evaluation and grading</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <div class="accordion-item bg-transparent border-0 border-bottom">
-                <h3 class="accordion-header">
-                  <button class="accordion-button collapsed bg-transparent shadow-none fw-bold text-dark px-0 py-4"
-                    type="button" data-bs-toggle="collapse" data-bs-target="#performance" aria-expanded="false"
-                    aria-controls="performance">
-                    <i class="ri-line-chart-line me-3 text-success"></i>
-                    Performance & Potential Management
-                  </button>
-                </h3>
-                <div id="performance" class="accordion-collapse collapse" data-bs-parent="#organizationAccordion">
-                  <div class="accordion-body px-0 pb-4">
-                    <ul class="list-unstyled">
-                      <li><i class="ri-check-line text-success me-2"></i>Development of OKR’s and KRA’s</li>
-                      <li><i class="ri-check-line text-success me-2"></i>Appraisal framework</li>
-                      <li><i class="ri-check-line text-success me-2"></i>Periodical potential assessment and leadership
-                        development</li>
-                      <li><i class="ri-check-line text-success me-2"></i>Skill gap assessment and future skill
-                        development</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <div class="accordion-item bg-transparent border-0 border-bottom">
-                <h3 class="accordion-header">
-                  <button class="accordion-button collapsed bg-transparent shadow-none fw-bold text-dark px-0 py-4"
-                    type="button" data-bs-toggle="collapse" data-bs-target="#learning" aria-expanded="false"
-                    aria-controls="learning">
-                    <i class="ri-book-open-line me-3 text-success"></i>
-                    Learning & Development
-                  </button>
-                </h3>
-                <div id="learning" class="accordion-collapse collapse" data-bs-parent="#organizationAccordion">
-                  <div class="accordion-body px-0 pb-4">
-                    <ul class="list-unstyled">
-                      <li><i class="ri-check-line text-success me-2"></i>Training program design and delivery</li>
-                      <li><i class="ri-check-line text-success me-2"></i>Coaching and mentoring</li>
-                      <li><i class="ri-check-line text-success me-2"></i>Designing innovative interventions for
-                        continuous learning and reflection in the work</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <div class="accordion-item bg-transparent border-0 border-bottom">
-                <h3 class="accordion-header">
-                  <button class="accordion-button collapsed bg-transparent shadow-none fw-bold text-dark px-0 py-4"
-                    type="button" data-bs-toggle="collapse" data-bs-target="#culture" aria-expanded="false"
-                    aria-controls="culture">
-                    <i class="ri-group-line me-3 text-success"></i>
-                    Culture as an Enabler of Progress
-                  </button>
-                </h3>
-                <div id="culture" class="accordion-collapse collapse" data-bs-parent="#organizationAccordion">
-                  <div class="accordion-body px-0 pb-4">
-                    <ul class="list-unstyled">
-                      <li><i class="ri-check-line text-success me-2"></i>Culture shift programs</li>
-                      <li><i class="ri-check-line text-success me-2"></i>Stakeholder engagement strategy</li>
-                      <li><i class="ri-check-line text-success me-2"></i>Organizational culture assessment</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <div class="accordion-item bg-transparent border-0">
-                <h3 class="accordion-header">
-                  <button class="accordion-button collapsed bg-transparent shadow-none fw-bold text-dark px-0 py-4"
-                    type="button" data-bs-toggle="collapse" data-bs-target="#hiring" aria-expanded="false"
-                    aria-controls="hiring">
-                    <i class="ri-user-search-line me-3 text-success"></i>
-                    Hiring and Talent Acquisition
-                  </button>
-                </h3>
-                <div id="hiring" class="accordion-collapse collapse" data-bs-parent="#organizationAccordion">
-                  <div class="accordion-body px-0 pb-4">
-                    <ul class="list-unstyled">
-                      <li><i class="ri-check-line text-success me-2"></i>Executive search and head hunting</li>
-                      <li><i class="ri-check-line text-success me-2"></i>Recruitment structuring</li>
-                      <li><i class="ri-check-line text-success me-2"></i>Campus hiring</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Academic Institutions & Students Services -->
-  <div class="py-5 bg-light">
-    <div class="container py-5">
-      <div class="row align-items-center">
-        <div class="col-lg-6 col-12 order-lg-2 mb-5 mb-lg-0">
-          <div class="position-relative">
-            <img src="images/SERVICES 2.png" alt="Academic Services" class="img-fluid rounded-3 shadow"
-              data-aos="fade-left" data-aos-duration="1000" />
-            <div class="position-absolute top-0 start-0 w-100 h-100 bg-success bg-opacity-10 rounded-3"></div>
-          </div>
-        </div>
-
-        <div class="col-lg-6 col-12 order-lg-1">
-          <div class="pe-lg-4">
-            <span
-              class="fw-light small px-3 py-2 rounded-pill bg-success bg-opacity-10 text-success text-uppercase mb-3 d-inline-block">
-              <i class="ri-school-line me-1"></i> For Academic Institutions
-            </span>
-            <h2 class="display-6 fw-bold mb-4">Shaping Brighter Futures</h2>
-            <p class="lead text-muted mb-5">
-              We partner with educational institutions to enhance quality, build strong brands,
-              and prepare students for successful, fulfilling careers.
-            </p>
-
-            <!-- Service Cards -->
-            <div class="row g-4">
-              <div class="col-md-6">
-                <div class="card border-0 bg-white shadow-sm h-100">
-                  <div class="card-body p-4">
-                    <div class="mb-3">
-                      <i class="ri-trophy-line display-6 text-success"></i>
-                    </div>
-                    <h5 class="fw-bold mb-3">Institutional Growth</h5>
-                    <p class="text-muted small mb-0">
-                      Academic excellence, teaching effectiveness, and enhanced national/international visibility.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-6">
-                <div class="card border-0 bg-white shadow-sm h-100">
-                  <div class="card-body p-4">
-                    <div class="mb-3">
-                      <i class="ri-compass-line display-6 text-success"></i>
-                    </div>
-                    <h5 class="fw-bold mb-3">Career Discovery</h5>
-                    <p class="text-muted small mb-0">
-                      Personalized counseling and mentoring to help students identify strengths and explore paths.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-6">
-                <div class="card border-0 bg-white shadow-sm h-100">
-                  <div class="card-body p-4">
-                    <div class="mb-3">
-                      <i class="ri-lightbulb-flash-line display-6 text-success"></i>
-                    </div>
-                    <h5 class="fw-bold mb-3">Entrepreneurship</h5>
-                    <p class="text-muted small mb-0">
-                      Innovation workshops and practical tools to help students turn ideas into impactful ventures.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-6">
-                <div class="card border-0 bg-white shadow-sm h-100">
-                  <div class="card-body p-4">
-                    <div class="mb-3">
-                      <i class="ri-team-line display-6 text-success"></i>
-                    </div>
-                    <h5 class="fw-bold mb-3">Alumni Engagement</h5>
-                    <p class="text-muted small mb-0">
-                      Strong networks that enhance credibility and create continuous career opportunities.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-12">
-                <div class="card border-0" style="background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);">
-                  <div class="card-body p-4 text-center text-white">
-                    <div class="mb-3">
-                      <i class="ri-tools-line display-6"></i>
-                    </div>
-                    <h5 class="fw-bold mb-3">Future-Ready Skill Building</h5>
-                    <p class="mb-0 opacity-90">
-                      Hands-on training in essential soft and professional skills, making students more confident,
-                      capable, and prepared for the modern workplace.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Why Choose PeopleBetter -->
-  <div class="py-5">
-    <div class="container py-5">
-      <div class="row align-items-center justify-content-center text-center mb-5">
-        <div class="col-lg-8">
-          <span
-            class="fw-light small px-3 py-2 rounded-pill bg-dark bg-opacity-10 text-dark text-uppercase mb-3 d-inline-block">
-            <i class="ri-star-line me-1"></i> Why Choose Us
-          </span>
-          <h2 class="display-5 fw-bold mb-4">Partner with Confidence</h2>
-          <p class="lead text-muted " style="text-align: center;">
-            Our proven track record and deep expertise ensure sustainable growth and lasting transformation for your
-            organization.
-          </p>
-        </div>
-      </div>
-
-      <div class="row g-4">
-        <div class="col-lg-4 col-md-6">
-          <div class="text-center h-100">
-            <div class="mb-4">
-              <div class=" bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center"
-                style="width: 80px; height: 80px;">
-                <i class="ri-user-star-line display-6 text-success"></i>
-              </div>
-            </div>
-            <h5 class="fw-bold mb-3">Expert Leadership</h5>
-            <p class="text-muted text-center" style="text-align: center;">
-              Decades of combined experience in organizational development, HR strategy, and educational transformation.
-            </p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6">
-          <div class="text-center h-100">
-            <div class="mb-4">
-              <div
-                class="bg-success bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center"
-                style="width: 80px; height: 80px;">
-                <i class="ri-rocket-line display-6 text-success"></i>
-              </div>
-            </div>
-            <h5 class="fw-bold mb-3">Proven Results</h5>
-            <p class="text-muted" style="text-align: center;">
-              Track record of successful transformations across diverse industries and academic institutions.
-            </p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6">
-          <div class="text-center h-100">
-            <div class="mb-4">
-              <div
-                class="bg-warning bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center"
-                style="width: 80px; height: 80px;">
-                <i class="ri-team-line display-6 text-warning"></i>
-              </div>
-            </div>
-            <h5 class="fw-bold mb-3">Partnership Approach</h5>
-            <p class="text-muted" style="text-align: center;">
-              Collaborative methodology that ensures knowledge transfer and sustainable long-term success.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Our Team -->
-
-  <div class="pt-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div class="build-something-together shadow rounded-3 py-5" data-aos="zoom-in" data-aos-duration="1000">
-            <div class="text-center text-white py-5">
-              <div class="mb-5">
-                <h1 class="fw-bold mb-3">Let’s Connect and Grow Together</h1>
-                <p class="lead text-center px-lg-5">
-                  Start the conversation. We’re listening.
-                </p>
-              </div>
-              <a href="contact.html" class="btn btn-outline-light btn-lg">Reach Out now</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- footer -->
-
-  <div class="footer bg-black py-5 mt-5">
-    <div class="container py-5 mt-5">
-      <div class="row gy-5 text-center text-lg-start">
-        <!-- Left Side -->
-        <div class="col-lg-6 col-12">
-          <div class="row gy-4">
-            <div class="col-md-6">
-              <div class="lh-1">
-                <h5 class="fw-bold m-0 text-white">PeopleBetter</h5>
-              </div>
-              <p class="text-white-50 mt-3">
-                Our solutions are designed to be customizable and scalable,
-                catering to the unique needs of each client.
-              </p>
-              <div class="d-flex justify-content-center justify-content-md-start align-items-center gap-3 mt-3">
-                <a href="#" class="link-secondary">
-                  <i class="ri-facebook-circle-fill ri-xl"></i>
-                </a>
-                <a href="#" class="link-secondary">
-                  <i class="ri-twitter-fill ri-xl"></i>
-                </a>
-                <a href="#" class="link-secondary">
-                  <i class="ri-instagram-fill ri-xl"></i>
-                </a>
-                <a href="#" class="link-secondary">
-                  <i class="ri-youtube-fill ri-xl"></i>
-                </a>
-                <a href="#" class="link-secondary">
-                  <i class="ri-linkedin-fill ri-xl"></i>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-md-6">
-              <h6 class="fw-bold text-white">Useful Links</h6>
-              <ul class="list-unstyled d-grid gap-2 mt-3">
-                <li><a href="about.html" class="link-secondary">About</a></li>
-                <li>
-                  <a href="services.html" class="link-secondary">Services</a>
-                </li>
-                <li><a href="shop.html" class="link-secondary">Shop</a></li>
-                <li>
-                  <a href="contact.html" class="link-secondary">Contact Us</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <!-- Right Side -->
-        <div class="col-lg-6 col-12">
-          <div class="row gy-4">
-            <div class="col-md-6 text-center text-md-start">
-              <h6 class="fw-bold text-white">Get In Touch</h6>
-              <p class="text-white-50 mt-3">
-                <i class="ri-phone-line ri-xl me-2"></i> 9777451500
-              </p>
-              <p class="text-white-50">
-                <i class="ri-mail-fill ri-lg" style="font-size: 1.3rem"></i>
-                office@peoplebetter.in
-              </p>
-            </div>
-            <div class="col-md-6 text-center text-md-start">
-              <h6 class="fw-bold text-white">Our Location</h6>
-              <p class="text-white-50 mt-3">
-                PeopleBetter,<br />
-                Awfis Space Solutions Limited,<br />
-                Second Floor, SRB Tower,<br />
-                E-12, Infocity, Patia,<br />
-                Bhubaneswar-751024, Odisha
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="bg-dark">
-    <div class="container">
-      <div class="row justify-content-center py-4">
-        <div class="col-auto">
-          <p class="text-center m-0 text-white-50">
-            Copyright © 2025
-            <a href="#" class="text-white">|| PeopleBetter. All rights reserved</a>
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Nav Sidebar -->
-  <div class="offcanvas offcanvas-end" tabindex="-1" id="sidebar">
-    <div class="offcanvas-header d-flex align-items-center justify-content-between">
-      <div class="position-relative d-flex align-items-center gap-2 site-brand">
-
-        <div class="lh-1">
-          <h5 class="fw-bold m-0">PeopleBetter</h5>
-          <!-- <small class="text-muted">Template</small> -->
-        </div>
-        <a class="stretched-link" href="index.html"></a>
-      </div>
-      <a href="#" class="link-light" data-bs-dismiss="offcanvas" aria-label="Close"><i
-          class="ri-close-line ri-lg"></i></a>
-    </div>
-    <div class="offcanvas-body">
-      <div class="sidebar-nav">
-        <ul class="navbar-nav mb-3">
-          <li class="nav-item">
-            <a class="nav-link active" href="index.html"> Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="services.html">Services</a>
-          </li>
-
-          <!-- <li class="nav-item">
             <a class="nav-link" href="shop.html">Shop</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="media.html">Media</a>
           </li> -->
-        </ul>
-        <a href="contact.html" class="btn btn-light btn-sm w-100 py-3">Reach us</a>
+          </ul>
+          <a href="contact.html" class="btn btn-light btn-sm w-100 py-3"
+            >Reach us</a
+          >
+        </div>
       </div>
     </div>
-  </div>
-  <!-- Video Modal -->
-  <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-xl">
-      <div class="modal-content bg-transparent border-0 rounded-0">
-        <div class="modal-header d-flex justify-content-end border-0 py-0">
-          <a href="#" class="link-light" data-bs-dismiss="modal" aria-label="Close"><i
-              class="ri-close-fill ri-2x"></i></a>
-        </div>
-        <div class="modal-body px-5">
-          <div class="ratio ratio-16x9">
-            <iframe src="https://www.youtube.com/embed/gu-HhgJ7vfM?si=egwKhEDMVeXg3IuJ" title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen></iframe>
+    <!-- Video Modal -->
+    <div
+      class="modal fade"
+      id="videoModal"
+      tabindex="-1"
+      aria-labelledby="videoModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content bg-transparent border-0 rounded-0">
+          <div class="modal-header d-flex justify-content-end border-0 py-0">
+            <a
+              href="#"
+              class="link-light"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+              ><i class="ri-close-fill ri-2x"></i
+            ></a>
+          </div>
+          <div class="modal-body px-5">
+            <div class="ratio ratio-16x9">
+              <iframe
+                src="https://www.youtube.com/embed/gu-HhgJ7vfM?si=egwKhEDMVeXg3IuJ"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <script src="vender/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <!-- Jquery Js -->
-  <script src="vender/jquery/jquery-3.6.4.min.js"></script>
-  <!-- AOS Js -->
-  <script src="vender/aos/dist/aos.js"></script>
-  <!-- Custom Js -->
-  <script src="js/script.js"></script>
-</body>
-
+    <script src="vender/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Jquery Js -->
+    <script src="vender/jquery/jquery-3.6.4.min.js"></script>
+    <!-- AOS Js -->
+    <script src="vender/aos/dist/aos.js"></script>
+    <!-- Custom Js -->
+    <script src="js/script.js"></script>
+  </body>
 </html>
